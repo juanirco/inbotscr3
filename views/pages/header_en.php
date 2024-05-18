@@ -1,7 +1,7 @@
 <header class="header">
     <div class="bigS_nav">
         <div class="main_nav">
-            <a href="/" class="left">
+            <a href="/en" class="left">
                 <img src="../build/img/logoInbotscrBar.svg" alt="Inbotscr Logo">
             </a>
             <div class="right">
