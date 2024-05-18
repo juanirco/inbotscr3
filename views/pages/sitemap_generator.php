@@ -3,13 +3,6 @@
 
 // Cargar el inicializador de la aplicación
 require_once __DIR__ . '/../includes/app.php';
-
-// Importar las clases necesarias
-use Model\Project;
-
-// Obtener los proyectos desde la base de datos
-$projects = Project::all();
-
 // Generar el contenido del sitemap
 $xml = '<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';

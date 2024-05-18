@@ -145,5 +145,9 @@ class PagesController {
             'title' => 'Terms & Conditions'
         ]);
     }
+    public static function sitemap_generator(Router $router){
+        // place where view can be found and the code inside the brackets is what we pass to the view
+        $router->render('pages/sitemap_generator');
+    }
     
 }
