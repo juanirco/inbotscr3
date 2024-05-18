@@ -16,7 +16,7 @@
     
         <div class="section_div">
             <div class="split">
-                <h4 class="section_title">¿Por que necesitas un sitio web o una aplicación web?</h4>
+                <h3 class="section_title">¿Por que necesitas un sitio web o una aplicación web?</h3>
                 <div class="section_text">
                     <details>
                         <summary>Tu presencia en el mundo digital: </summary>
@@ -56,7 +56,7 @@
     <section class="section_content">
         <div class="section_div">
             <div class="full">
-                <h4 class="section_title">Sitio Web o Aplicación Web ¿Diferencia?</h4>
+                <h3 class="section_title">Sitio Web o Aplicación Web ¿Diferencia?</h3>
                 <p class="full_width">Los sitios web son parecidos a vitrinas que muestran información estática, mientras que las aplicaciones web son como herramientas interactivas que permiten a los usuarios realizar acciones específicas. Mientras que los usuarios pueden ver, leer o escuchar el contenido de un sitio web, no pueden manipularlo. En cambio, las aplicaciones web ofrecen elementos con los que los usuarios pueden interactuar, permitiéndoles manipular datos y realizar acciones dentro de la aplicación.</p>
             </div>
         </div>
@@ -65,7 +65,7 @@
     <section class="section_content">
         <div class="section_div">
             <div class="full">
-                <h4 class="section_title">Sitios y aplicaciones web para cualquier nicho</h4>
+                <h3 class="section_title">Sitios y aplicaciones web para cualquier nicho</h3>
                 <p class="full_width">En Inbotscr diseñamos sitios web y aplicaciones web modernas y responsivas (adaptable a cualquier pantalla), super creativas, con las mejores medidas de seguridad y por supuesto con las mejores prácticas para posicionar tu sitio en las primeras posiciones de los buscadores.</p>
                 <div class="niches">
                     <div class="niche">

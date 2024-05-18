@@ -17,66 +17,64 @@ $xml = '<?xml version="1.0" encoding="UTF-8"?>
 // Agregar las URLs de las páginas en español al sitemap
 $xml .= '
     <url>
-        <loc>https://rslcr.com/</loc>
+        <loc>https://inbotscr.com/</loc>
         <lastmod>' . date("Y-m-d") . '</lastmod>
     </url>
     <url>
-        <loc>https://rslcr.com/nosotros</loc>
+        <loc>https://inbotscr.com/nosotros</loc>
         <lastmod>' . date("Y-m-d") . '</lastmod>
     </url>
     <url>
-        <loc>https://rslcr.com/servicios</loc>
+        <loc>https://inbotscr.com/chatbots</loc>
         <lastmod>' . date("Y-m-d") . '</lastmod>
     </url>
     <url>
-        <loc>https://rslcr.com/proyectos</loc>
+        <loc>https://inbotscr.com/bots_con_ia</loc>
         <lastmod>' . date("Y-m-d") . '</lastmod>
     </url>
     <url>
-        <loc>https://rslcr.com/contacto</loc>
+        <loc>https://inbotscr.com/marketing_conversacional</loc>
+        <lastmod>' . date("Y-m-d") . '</lastmod>
+    </url>
+    <url>
+        <loc>https://inbotscr.com/desarrollo_web</loc>
+        <lastmod>' . date("Y-m-d") . '</lastmod>
+    </url>
+    <url>
+        <loc>https://inbotscr.com/contacto</loc>
         <lastmod>' . date("Y-m-d") . '</lastmod>
     </url>';
 
 // Agregar las URLs de las páginas en inglés al sitemap
 $xml .= '
     <url>
-        <loc>https://rslcr.com/en</loc>
+        <loc>https://inbotscr.com/en</loc>
         <lastmod>' . date("Y-m-d") . '</lastmod>
     </url>
     <url>
-        <loc>https://rslcr.com/us</loc>
+        <loc>https://inbotscr.com/us</loc>
         <lastmod>' . date("Y-m-d") . '</lastmod>
     </url>
     <url>
-        <loc>https://rslcr.com/services</loc>
+        <loc>https://inbotscr.com/chatbots_en</loc>
         <lastmod>' . date("Y-m-d") . '</lastmod>
     </url>
     <url>
-        <loc>https://rslcr.com/projects</loc>
+        <loc>https://inbotscr.com/ai_bots</loc>
         <lastmod>' . date("Y-m-d") . '</lastmod>
     </url>
     <url>
-        <loc>https://rslcr.com/contact</loc>
+        <loc>https://inbotscr.com/chat_marketing</loc>
+        <lastmod>' . date("Y-m-d") . '</lastmod>
+    </url>
+    <url>
+        <loc>https://inbotscr.com/web_development</loc>
+        <lastmod>' . date("Y-m-d") . '</lastmod>
+    </url>
+    <url>
+        <loc>https://inbotscr.com/contact</loc>
         <lastmod>' . date("Y-m-d") . '</lastmod>
     </url>';
-
-// Agregar las URLs de los proyectos en español al sitemap
-foreach ($projects as $project) {
-    $xml .= '
-    <url>
-        <loc>https://rslcr.com/proyecto?id=' . $project->id . '</loc>
-        <lastmod>' . date("Y-m-d") . '</lastmod>
-    </url>';
-}
-
-// Agregar las URLs de los proyectos en inglés al sitemap
-foreach ($projects as $project) {
-    $xml .= '
-    <url>
-        <loc>https://rslcr.com/project?id=' . $project->id . '</loc>
-        <lastmod>' . date("Y-m-d") . '</lastmod>
-    </url>';
-}
 
 $xml .= '
 </urlset>';

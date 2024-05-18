@@ -31,15 +31,15 @@
         <div class="intro_div">
             <h2 class="intro_title">¿Como?</h2>
             <div class="intro_text">
-                <h4>Desarrollo web y chatbots:</h4>
+                <h3>Desarrollo web y chatbots:</h3>
                 <p>Brindamos a tus clientes la posibilidad de encontrar información de tu negocio en todo momento, confirmando tu presencia online 24/7 y alineando tu negocio a brindar la mejor experiencia posible.</p>
             </div>
             <div class="intro_text">
-                <h4>Marketing Conversacional y Posicionamiento Web:</h4>
+                <h3>Marketing Conversacional y Posicionamiento Web:</h3>
                 <p>Aplicaremos las mejores practicas y todo nuestro conocimiento –de muchos años de experiencia– para hacer tu negocio mas visible, mas rentable y con mayor influencia.</p>
             </div>
             <div class="intro_text">
-                <h4>Integraciones: </h4>
+                <h3>Integraciones: </h3>
                 <p>Nos especializamos en proveer soluciones que permite a nuestros clientes tener mayor control de sus datos y recursos, por ello implementamos integraciones que garantizan una mejor experiencia a la hora de operar sus negocios.</p>
             </div>
 
@@ -65,11 +65,11 @@
         <div class="intro_div">
             <h2 class="intro_title">¿Para que?</h2>
                 <div class="intro_text">
-                    <h4>Experiencia:</h4><p> Investigaciones confirman que la lealtad de los clientes hacia una empresa está estrechamente ligada a la experiencia proporcionada por la empresa a sus clientes, superando así otros factores como el aspecto económico o la calidad del producto o servicio. La conexión emocional y la satisfacción del cliente son cruciales para mantener una afinidad duradera con la marca.</p>
+                    <h3>Experiencia:</h3><p> Investigaciones confirman que la lealtad de los clientes hacia una empresa está estrechamente ligada a la experiencia proporcionada por la empresa a sus clientes, superando así otros factores como el aspecto económico o la calidad del producto o servicio. La conexión emocional y la satisfacción del cliente son cruciales para mantener una afinidad duradera con la marca.</p>
                 </div>
     
                 <div class="intro_text">
-                    <h4>Crecimiento:</h4> <p class="p_end">Amamos impulsar el crecimiento y la rentabilidad de nuestros clientes. Creemos en la importancia de generar resultados tangibles. Al ofrecer soluciones personalizadas y centradas en el cliente, aspiramos a superar las expectativas, promoviendo así el éxito a largo plazo para nuestros clientes y sus negocios.</p>
+                    <h3>Crecimiento:</h3> <p class="p_end">Amamos impulsar el crecimiento y la rentabilidad de nuestros clientes. Creemos en la importancia de generar resultados tangibles. Al ofrecer soluciones personalizadas y centradas en el cliente, aspiramos a superar las expectativas, promoviendo así el éxito a largo plazo para nuestros clientes y sus negocios.</p>
                 </div>
             </div>
         </section>

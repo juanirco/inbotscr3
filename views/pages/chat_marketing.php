@@ -16,7 +16,7 @@
     
         <div class="section_div">
             <div class="split">
-                <h4 class="section_title">Importance of Chat Marketing and its benefits</h4>
+                <h3 class="section_title">Importance of Chat Marketing and its benefits</h3>
                 <div class="section_text">
                     <details>
                         <summary>Improves interaction with your customers</summary>
@@ -48,7 +48,7 @@
     <section class="section_content">
         <div class="section_div">
             <div class="full">
-                <h4 class="section_title">Chat Marketing for all niches</h4>
+                <h3 class="section_title">Chat Marketing for all niches</h3>
                 <div class="niches">
                     <div class="niche">
                         <picture>
@@ -311,7 +311,7 @@
     <section class="section_content">
         <div class="section_div">
             <div class="split">
-                <h4 class="section_title">Chat Marketing for all available channels</h4>
+                <h3 class="section_title">Chat Marketing for all available channels</h3>
                 <div class="channels">
                     <div class="channel">
                         <picture>

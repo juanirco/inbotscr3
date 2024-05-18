@@ -16,7 +16,7 @@
     
         <div class="section_div">
             <div class="split">
-                <h4 class="section_title">Why do you need a website or a web application?</h4>
+                <h3 class="section_title">Why do you need a website or a web application?</h3>
                 <div class="section_text">
                     <details>
                         <summary>Your presence in the digital world:</summary>
@@ -56,7 +56,7 @@
     <section class="section_content">
         <div class="section_div">
             <div class="full">
-                <h4 class="section_title">Website or Web Application: What's the Difference?</h4>
+                <h3 class="section_title">Website or Web Application: What's the Difference?</h3>
                 <p class="full_width">Websites are like showcases that display static information, while web applications are like interactive tools that allow users to perform specific actions. While users can view, read, or listen to the content of a website, they cannot manipulate it. In contrast, web applications offer elements with which users can interact, allowing them to manipulate data and perform actions within the application.</p>
             </div>
         </div>
@@ -65,7 +65,7 @@
     <section class="section_content">
         <div class="section_div">
             <div class="full">
-                <h4 class="section_title">Websites and web applications for any niche</h4>
+                <h3 class="section_title">Websites and web applications for any niche</h3>
                 <p class="full_width">At Inbotscr, we design modern and responsive websites and web applications (adaptable to any screen), super creative, with the best security measures, and of course with the best practices to position your site in the top positions of search engines.</p>
             </div>
         </div>
@@ -73,7 +73,7 @@
     <section class="section_content">
         <div class="section_div">
             <div class="full">
-                <h4 class="section_title">Websites and web applications for all niches</h4>
+                <h3 class="section_title">Websites and web applications for all niches</h3>
                 <div class="niches">
                     <div class="niche">
                         <picture>

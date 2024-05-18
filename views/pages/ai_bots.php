@@ -15,7 +15,7 @@
 
     <div class="section_div">
         <div class="split">
-            <h4 class="section_title">Everything a chatbot does but with greater potential and nearly limitless capabilities.</h4>
+            <h3 class="section_title">Everything a chatbot does but with greater potential and nearly limitless capabilities.</h3>
             <div class="section_text">
                 <details>
                     <summary>Efficient 24/7 customer service:</summary>
@@ -73,7 +73,7 @@
     <section class="section_content">
         <div class="section_div">
             <div class="full">
-                <h4 class="section_title">AI-Powered Bots for all available channels</h4>
+                <h3 class="section_title">AI-Powered Bots for all available channels</h3>
                 <div class="niches">
                     <div class="niche">
                         <picture>
@@ -336,7 +336,7 @@
     <section class="section_content">
         <div class="section_div">
             <div class="split">
-                <h4 class="section_title">AI-Powered Bots for all available channels</h4>
+                <h3 class="section_title">AI-Powered Bots for all available channels</h3>
                 <div class="channels">
                     <div class="channel">
                         <picture>

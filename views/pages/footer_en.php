@@ -1,7 +1,7 @@
 <footer class="footerbar" id="footer">
     <div class="footer-container">
         <div class="footer-links">
-            <h4>Links</h4>
+            <h3>Links</h3>
             <ul class="links-list">
                 <li><a href="/en">Home</a></li>
                 <li><a href="/about_us">About Us</a></li>
@@ -13,7 +13,7 @@
             </ul>
         </div>
         <div class="footer-contact">
-            <h4>Contact</h4>
+            <h3>Contact</h3>
             <div class="info_contact">
                 <p>info@inbotscr.com</p>
                 <p>+506 8318-9598</p>
@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="footer-socialMedia">
-            <h4>Social Media</h4>
+            <h3>Social Media</h3>
             <ul class="links-list">
                 <li><a href="https://www.facebook.com/inbotscr">Facebook</a></li>
                 <li><a href="https://www.instagram.com/inbotscr">Instagram</a></li>

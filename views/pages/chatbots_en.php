@@ -16,7 +16,7 @@
     
         <div class="section_div">
             <div class="split">
-                <h4 class="section_title">Why do you need a chatbot?</h4>
+                <h3 class="section_title">Why do you need a chatbot?</h3>
                 <div class="section_text">
                     <details>
                         <summary>Efficient 24/7 customer service:</summary>
@@ -52,7 +52,7 @@
     <section class="section_content">
         <div class="section_div">
             <div class="full">
-                <h4 class="section_title">Chatbots for all niches</h4>
+                <h3 class="section_title">Chatbots for all niches</h3>
                 <div class="niches">
                     <div class="niche">
                         <picture>
@@ -317,7 +317,7 @@
     <section class="section_content">
         <div class="section_div">
             <div class="split">
-                <h4 class="section_title">Chatbots for all available channels</h4>
+                <h3 class="section_title">Chatbots for all available channels</h3>
                 <div class="channels">
                     <div class="channel">
                         <picture>

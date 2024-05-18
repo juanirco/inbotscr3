@@ -8,7 +8,7 @@
                     <nav class="nav">
                         <a href="/">Inicio</a>
                         <a href="/nosotros">Nosotros</a>
-                        <a class="services_BS_a">Servicios</a>
+                        <p class="services_BS_a">Servicios</p>
                         <a href="/contacto">Contacto</a>
                     </nav>
                     <a href="/en">
@@ -40,7 +40,7 @@
                 <nav class="nav">
                     <a href="/">Inicio</a>
                     <a href="/nosotros">Nosotros</a>
-                    <a class="services_Mob_a">Servicios</a>
+                    <p class="services_Mob_a">Servicios</p>
                     <nav class="services_nav">
                         <a href="/chatbots">Chatbots</a>
                         <a href="/bots_con_ia">Bots con IA</a>

@@ -16,7 +16,7 @@
     
         <div class="section_div">
             <div class="split">
-                <h4 class="section_title">Importancia del Marketing Conversacional y sus beneficios</h4>
+                <h3 class="section_title">Importancia del Marketing Conversacional y sus beneficios</h3>
                 <div class="section_text">
                     <details>
                         <summary>Mejora la interacción con tus clientes</summary>
@@ -48,7 +48,7 @@
     <section class="section_content">
         <div class="section_div">
             <div class="full">
-                <h4 class="section_title">Marketing Conversacional para todos los nichos</h4>
+                <h3 class="section_title">Marketing Conversacional para todos los nichos</h3>
                 <div class="niches">
                     <div class="niche">
                         <picture>
@@ -311,7 +311,7 @@
     <section class="section_content">
         <div class="section_div">
             <div class="split">
-                <h4 class="section_title">Marketing Conversacional para todos los canales disponibles</h4>
+                <h3 class="section_title">Marketing Conversacional para todos los canales disponibles</h3>
                 <div class="channels">
                     <div class="channel">
                         <picture>

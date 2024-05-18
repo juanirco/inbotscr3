@@ -31,15 +31,15 @@
         <div class="intro_div">
             <h2 class="intro_title">How?</h2>
             <div class="intro_text">
-                <h4>Web Development and Chatbots:</h4>
+                <h3>Web Development and Chatbots:</h3>
                 <p>We provide your customers with the ability to find information about your business at all times, confirming your online presence 24/7 and aligning your business to provide the best possible experience.</p>
             </div>
             <div class="intro_text">
-                <h4>Conversational Marketing and Web Positioning:</h4>
+                <h3>Conversational Marketing and Web Positioning:</h3>
                 <p>We will apply the best practices and all our knowledge - from many years of experience - to make your business more visible, more profitable, and with greater influence.</p>
             </div>
             <div class="intro_text">
-                <h4>Integrations: </h4>
+                <h3>Integrations: </h3>
                 <p>We specialize in providing solutions that allow our clients to have greater control over their data and resources, therefore, we implement integrations that guarantee a better experience when operating their businesses.</p>
             </div>
 
@@ -65,11 +65,11 @@
         <div class="intro_div">
             <h2 class="intro_title">For What?</h2>
                 <div class="intro_text">
-                    <h4>Experience:</h4><p>Research confirms that customer loyalty to a company is closely linked to the experience provided by the company to its customers, surpassing other factors such as the economic aspect or the quality of the product or service. Emotional connection and customer satisfaction are crucial for maintaining lasting affinity with the brand.</p>
+                    <h3>Experience:</h3><p>Research confirms that customer loyalty to a company is closely linked to the experience provided by the company to its customers, surpassing other factors such as the economic aspect or the quality of the product or service. Emotional connection and customer satisfaction are crucial for maintaining lasting affinity with the brand.</p>
                 </div>
     
                 <div class="intro_text">
-                    <h4>Growth:</h4> <p class="p_end">We love to drive the growth and profitability of our clients. We believe in the importance of generating tangible results. By offering personalized solutions centered on the customer, we aspire to exceed expectations, thus promoting long-term success for our clients and their businesses.</p>
+                    <h3>Growth:</h3> <p class="p_end">We love to drive the growth and profitability of our clients. We believe in the importance of generating tangible results. By offering personalized solutions centered on the customer, we aspire to exceed expectations, thus promoting long-term success for our clients and their businesses.</p>
                 </div>
             </div>
         </section>
