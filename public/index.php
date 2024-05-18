@@ -30,7 +30,6 @@ $router->get('/privacidad', [PagesController::class, 'privacidad']);
 $router->get('/privacy', [PagesController::class, 'privacy']);
 $router->get('/condiciones', [PagesController::class, 'condiciones']);
 $router->get('/conditions', [PagesController::class, 'terms']);
-$router->get('/sitemap_generator', [PagesController::class, 'sitemap_generator']);
 // The way it works is route and then the function name, I mean the ones inside the quatation marks.
 
 // Login
