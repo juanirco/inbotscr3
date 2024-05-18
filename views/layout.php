@@ -15,10 +15,7 @@
     <noscript>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Cabin:ital,wght@0,400..700;1,400..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,200;0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
     </noscript>
-    <link rel="stylesheet" href="build/css/app.css" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="build/css/app.css">
-    </noscript>
+    <link rel="stylesheet" href="build/css/app.css">
     <link rel="preload" href="../build/img/logoInbotscrBar.svg" as="image">
 </head>
 <body>
