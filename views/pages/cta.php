@@ -1,4 +1,7 @@
 <div class="cta">
-    <p>En RSL Electromecánica, estamos listos para llevar tu proyecto al siguiente nivel, ¿Y tú? ¡Contáctanos hoy mismo para convertir ese sueño o proyecto en una realidad!</p>
-    <a href="/contacto" class="cta_button" title="Contáctenos hoy para comenzar">¡Contáctenos hoy mismo!</a>
+    <p>Conversa con nosotros para comenzar a brindar una experiencia increíble a tus clientes y al mismo tiempo ese impulso a tu negocio que has estado buscando.</p>
+
+    <div class="button_div">
+        <a href="/contacto" class="button_trnsp" title="Contáctanos hoy para comenzar">Contáctanos</a>
+    </div>
 </div>

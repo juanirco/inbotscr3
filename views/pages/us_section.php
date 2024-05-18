@@ -1,7 +1,0 @@
-<div class="us_div">
-    <h4 class="us-short-description">We are RSL Electromechanical, your reliable partner in the construction of residential, industrial, and commercial projects. With over two decades of experience in the electromechanical field, we pride ourselves on offering innovative and high-quality solutions that exceed our clients' expectations.</h4>
-    <h4 class="us-short-description">At RSL, we are committed to ensuring excellence at every stage of the construction process. From initial planning to final delivery, our team of highly trained professionals works diligently to deliver outstanding results in every project we undertake.</h4>
-    <h4 class="us-short-description no_home_view">We have successfully completed a wide range of projects, from small residences to large industrial facilities, and we are proud to say that each one has been delivered on time and within the agreed budget.</h4>
-    <h4 class="us-short-description no_home_view">By choosing to work with us, you can have the peace of mind knowing that you are entrusting your project to expert and dedicated hands.</h4>
-    <h4 class="us-short-description">Contact us today to start turning your vision into reality with RSL Electromechanical!</h4>
-</div>

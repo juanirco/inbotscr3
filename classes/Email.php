@@ -30,7 +30,7 @@ class Email {
             $email->Password = $_ENV['EMAIL_PASS'];
             $email->SMTPSecure = 'tls';
         
-            $email->setFrom('info@rslcr.com');
+            $email->setFrom('info@inbotscr.com');
             $email->addAddress($this->email);
             $email->Subject = 'Confirma tu cuenta';
             //Content
@@ -38,7 +38,7 @@ class Email {
             $email->CharSet = 'UTF-8';
 
             $content = '<html>';
-            $content .= "<p>Hola <strong>" . $this->name . "</strong> has creado tu cuenta en RSL.com, ahora solo debes confirmarla presionando el siguiente enlace</p>";
+            $content .= "<p>Hola <strong>" . $this->name . "</strong> has creado tu cuenta en Inbotscr, ahora solo debes confirmarla presionando el siguiente enlace</p>";
             $content .= "<p>Presiona aquí: <a href='" . $_ENV['APP_URL'] . "/m-confirmar?token=" . $this->token . "'>Confirmar Cuenta</a> </p>";
             $content .= "<p> Si tu no solicitaste esta cuenta, puedes ignorar el mensaje";
             $content .= '</html>';
@@ -64,7 +64,7 @@ class Email {
             $email->SMTPSecure = 'tls';
 
             //Recipients
-            $email->setFrom('info@rslcr.com');
+            $email->setFrom('info@inbotscr.com');
             $email->addAddress($this->email);
             $email->Subject = 'Restablece tu password';
             //Content
@@ -99,7 +99,7 @@ class Email {
             $email->SMTPSecure = 'tls';
 
             //Recipients
-            $email->setFrom('info@rslcr.com');
+            $email->setFrom('info@inbotscr.com');
             $email->addAddress($this->email);
             $email->Subject = 'Invitación para unirse al equipo de RSL';
             //Content

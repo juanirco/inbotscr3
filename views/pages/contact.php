@@ -1,32 +1,44 @@
 <?php include_once __DIR__ . '/header_en.php'?>
 <div class="contact">
-    <h1><?php echo $title?></h1>
+    <main class="hero">
+        <div class="hero_content">
+            <h1>
+                <span>Contact <-> Contact us for any quotation or inquiry</span>
+            </h1>
+        </div>
+    </main>
+    <section class="section_content">
+        <h1 class="title">
+            <?php echo $title?>
+        </h1>
+        <div class="section_div">
+            <?php include_once __DIR__ . '/../templates/alerts.php';?>
+            <p>If you are looking to inquire about chatbots, AI bots, conversational marketing, or web development, Inbotscr can assist you.</p>
+            <p>This is the place where we address any doubts or inquiries. Just leave us your details and inquiry, and you will soon receive a response.</p>
+            <form action="/contact" class="form" method="POST">
+                <div class="field">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Your name" required>
+                </div>
 
-    <?php include_once __DIR__ . '/../templates/alerts.php';?>
+                <div class="field">
+                    <label for="lastname">Lastname:</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Your lastname">
+                </div>
+                <div class="field">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Your email" required>
+                </div>
 
-<p>If you're from Costa Rica or live in Costa Rica and are looking for quotes on electromechanical services, electrical network services, telecommunications networks, plumbing systems, fire suppression systems, or gas network systems, here at RSL Electromechanical, we can assist you.</p>
-<p>This is the place where we answer any questions or inquiries you may have. Just leave us your details and your inquiry, and you'll soon receive a response.</p>
-    <form action="/contact" class="form" method="POST">
-            <div class="field">
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name" placeholder="Your name" required>
-            </div>
-    
-            <div class="field">
-                <label for="lastname">Lastname:</label>
-                <input type="text" name="lastname" id="lastname" placeholder="Your lastname">
-            </div>
-            <div class="field">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="Your email" required>
-            </div>
+                <div class="field">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                </div>
 
-            <div class="field">
-            <label for="message">Message:</label>
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-            </div>
+                <input type="submit" class="button" value="Send Message">
+            </form>
 
-            <input type="submit" class="button" value="Send Message">
-        </form>
+        </div>
+    </section>
 </div>
 <?php include_once __DIR__ . '/footer_en.php'?>

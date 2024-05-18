@@ -1,5 +1,5 @@
 {
-  "name": "rslcr-php-mvc",
+  "name": "inbotscr3.0-php-mvc",
   "version": "1.0.0",
   "description": "proyecto real php mvc para servicios de electro mecanica rsccr",
   "main": "index.js",
@@ -24,6 +24,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-terser-js": "^5.2.2",
     "gulp-webp": "^4.0.1",
+    "imagemin-gifsicle": "^7.0.0",
     "sass": "^1.74.1",
     "terser": "^5.30.3"
   }

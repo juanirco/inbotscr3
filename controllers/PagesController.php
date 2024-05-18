@@ -3,8 +3,6 @@
 namespace Controllers;
 
 use Classes\ContactEmail;
-use Model\Photo;
-use Model\Project;
 use Model\User;
 use MVC\Router;
 
@@ -13,22 +11,14 @@ class PagesController {
 
     public static function inicio(Router $router){
         // place where view can be found and the code inside the brackets is what we pass to the view
-        $projects = Project::get_limit(6);
-        $photos = Photo::all();
         $router->render('pages/inicio',[
             'title' => 'Inicio',
-            'projects' => $projects,
-            'photos' => $photos
         ]);
     }
     public static function home(Router $router){
         // place where view can be found and the code inside the brackets is what we pass to the view
-        $projects = Project::get_limit(6);
-        $photos = Photo::all();
         $router->render('pages/home',[
             'title' => 'Home',
-            'projects' => $projects,
-            'photos' => $photos
         ]);
     }
 
@@ -45,61 +35,56 @@ class PagesController {
         ]);
     }
 
-    public static function servicios(Router $router){
+    public static function chatbots(Router $router){
         // place where view can be found and the code inside the brackets is what we pass to the view
-        $router->render('pages/servicios',[
-            'title' => 'Servicios'
+        $router->render('pages/chatbots',[
+            'title' => 'Chatbots'
         ]);
     }
-    public static function services(Router $router){
+    public static function chatbots_en(Router $router){
         // place where view can be found and the code inside the brackets is what we pass to the view
-        $router->render('pages/services',[
-            'title' => 'Services'
-        ]);
-    }
-
-    public static function proyectos(Router $router){
-        // place where view can be found and the code inside the brackets is what we pass to the view
-        $projects = Project::all();
-        $photos = Photo::all();
-        $router->render('pages/proyectos',[
-            'title' => 'Proyectos',
-            'projects' => $projects,
-            'photos' => $photos
-        ]);
-    }
-    public static function projects(Router $router){
-        // place where view can be found and the code inside the brackets is what we pass to the view
-        $projects = Project::all();
-        $photos = Photo::all();
-        $router->render('pages/projects',[
-            'title' => 'Projects',
-            'projects' => $projects,
-            'photos' => $photos
+        $router->render('pages/chatbots_en',[
+            'title' => 'Chatbots'
         ]);
     }
 
-    public static function proyecto(Router $router){
+    public static function bots_con_ia(Router $router){
         // place where view can be found and the code inside the brackets is what we pass to the view
-        $project = Project::where('id', s($_GET['id']));
-        $projectPhotos = Photo::belongsTo('projectId', s($_GET['id']));
-        $router->render('pages/proyecto',[
-            'title' => 'Proyecto',
-            'project' => $project,
-            'projectPhotos' => $projectPhotos
+        $router->render('pages/botsIA',[
+            'title' => 'Bots con Inteligencia Artificial'
+        ]);
+    }
+    public static function ai_bots(Router $router){
+        // place where view can be found and the code inside the brackets is what we pass to the view
+        $router->render('pages/ai_bots',[
+            'title' => 'AI Bots'
+        ]);
+    }
+    public static function marketing_conversacional(Router $router){
+        // place where view can be found and the code inside the brackets is what we pass to the view
+        $router->render('pages/marketing_conversacional',[
+            'title' => 'Marketing Conversacional'
+        ]);
+    }
+    public static function chat_marketing(Router $router){
+        // place where view can be found and the code inside the brackets is what we pass to the view
+        $router->render('pages/chat_marketing',[
+            'title' => 'Chat Marketing'
+        ]);
+    }
+    public static function desarrollo_web(Router $router){
+        // place where view can be found and the code inside the brackets is what we pass to the view
+        $router->render('pages/desarrollo_web',[
+            'title' => 'Desarrollo Web'
+        ]);
+    }
+    public static function web_development(Router $router){
+        // place where view can be found and the code inside the brackets is what we pass to the view
+        $router->render('pages/web_development',[
+            'title' => 'Web Development'
         ]);
     }
 
-    public static function project(Router $router){
-        // place where view can be found and the code inside the brackets is what we pass to the view
-        $project = Project::where('id', s($_GET['id']));
-        $projectPhotos = Photo::belongsTo('projectId', s($_GET['id']));
-        $router->render('pages/project',[
-            'title' => 'Project',
-            'project' => $project,
-            'projectPhotos' => $projectPhotos
-        ]);
-    }
 
     public static function contacto(Router $router){
         // place where view can be found and the code inside the brackets is what we pass to the view
@@ -154,9 +139,9 @@ class PagesController {
         ]);
     }
 
-    public static function conditions(Router $router){
+    public static function terms(Router $router){
         // place where view can be found and the code inside the brackets is what we pass to the view
-        $router->render('pages/conditions',[
+        $router->render('pages/terms',[
             'title' => 'Terms & Conditions'
         ]);
     }

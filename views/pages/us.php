@@ -1,23 +1,32 @@
 <?php include_once __DIR__ . '/header_en.php'?>
 <div class="us">
     <h1><?php echo $title?></h1>
-    <div class="split">
-        <div class="empresa">
-            <h3>Our Company</h3>
-            <?php include_once __DIR__ . '/us_section.php'?>
-        </div>
-        <div class="mis_vis">
-            <div class="mision">
-                <h3>Mission:</h3>
-                <p>Provide comprehensive and high-quality solutions in the construction of residential, industrial, and commercial projects, based on our experience, innovation, and commitment to excellence. We pledge to work closely with our clients to understand their needs and exceed their expectations, offering personalized and efficient service that ensures satisfaction at every stage of the process. Driven by passion for our work and the desire to contribute to progress, we strive to be a reliable partner and a positive force for change in the electromechanical construction industry.</p>
-            </div>
-            <div class="vision">
-                <h3>Vision:</h3>
-                <p>To be recognized as leaders in the electromechanical construction industry, distinguished for our excellence in the execution of innovative and sustainable projects that contribute to the development and well-being of the communities in which we operate. We aim to be a benchmark for quality, commitment, and responsibility in every project we undertake, surpassing our clients' expectations and being acknowledged for our positive impact on the world.</p>
-            </div>
+    <div class="business">
+        <img src="../../build/img/logoInbotscr.svg" alt="">
+        <div class="us_text">
+            <p>Our mission is clear: to make an impact and drive the growth and recognition our clients deserve.</p>
+            <p>Our journey began with the creation of chatbots in an ever-evolving digital world. In 2018, our commitment to excellence led us to be recognized as one of the winning teams in a prestigious global chatbot building competition.</p>
+            <p>Over time, our vision has expanded. Today, we not only excel in chatbot development, but we have also ventured into web development, thus expanding our range of solutions for our partners.</p>
+            <p>At Inbotscr, we value every opportunity as a new challenge to grow and evolve. We pride ourselves on offering our clients tailored solutions that allow them to stand out in an increasingly diverse and competitive digital world.</p>
+            <p>We are more than an agency; we are digital storytellers, transforming ideas into memorable experiences.</p>
         </div>
     </div>
-    <?php include_once __DIR__ . '/certifications_section.php'?>
+    <h2>Founder</h2>
+    <div class="team">
+        <div class="teamImage">
+            <h3>Chatbots and Web<br>Development<br>Expert</h3>
+        </div>
+        <div class="us_text">
+            <p>Hello, I'm Juan R. Caballero, founder of Inbotscr.</p>
+            <p>I have over 6 years of experience in chatbots, conversational marketing, digital marketing, and sales. I also have extensive knowledge in web development and web positioning.</p>
+
+            <p>I not only hold multiple certifications on different platforms, some of them being: Google, Meta, Make, Platzi, among others; but I have also been a winner in renowned competitions I have participated in, where perhaps the one held by the Manychat platform in 2018 has been the most important, as it was a worldwide competition, in which a huge number of people participated.</p>
+
+            <p>This is just a glimpse of how committed I am to everything I do and the level of self-demand my clients can expect from me.</p>
+
+            <p>I am obsessed with great results no matter the size of the challenge. You can count on me to achieve those dreams that others fear to face.</p>
+        </div>
+    </div>
 </div>
 <?php include_once __DIR__ . '/cta_en.php'?>
 <?php include_once __DIR__ . '/footer_en.php'?>

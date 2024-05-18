@@ -5,28 +5,27 @@
             <ul class="links-list">
                 <li><a href="/">Inicio</a></li>
                 <li><a href="/nosotros">Nosotros</a></li>
-                <li><a href="/proyectos">Proyectos</a></li>
-                <li><a href="/servicios">Servicios</a></li>
+                <li><a href="/chatbots">Chatbots</a></li>
+                <li><a href="/bots_con_ia">Bots con IA</a></li>
+                <li><a href="/marketing_conversacional">Marketing Conversacional</a></li>
+                <li><a href="/desarrollo_web">Desarrollo Web</a></li>
                 <li><a href="contacto">Contacto</a></li>
             </ul>
         </div>
         <div class="footer-contact">
             <h4>Contacto</h4>
             <div class="info_contact">
-                <p>Email</p>
-                <p>info@rslcr.com</p>
-                <p>Telefono</p>
-                <p>+506 4702-0720</p>
-                <p>Dirección</p>
-                <p>San José, Santa Ana, Alto de las Palomas, <br>Plaza Panorama segundo piso Local #6</p>
+                <p>info@inbotscr.com</p>
+                <p>+506 8318-9598</p>
+                <p>Alajuela, Costa Rica</p>
             </div>
         </div>
         <div class="footer-socialMedia">
             <h4>Redes</h4>
             <ul class="links-list">
-                <li><a href="https://www.facebook.com/rslelectromecanica">Facebook</a></li>
-                <li><a href="https://www.instagram.com/rslelectromecanica/">Instagram</a></li>
-                <li><a href="https://wa.me/+50660777707">WhatsApp</a></li>
+                <li><a href="https://www.facebook.com/inbotscr">Facebook</a></li>
+                <li><a href="https://www.instagram.com/inbotscr">Instagram</a></li>
+                <li><a href="https://wa.me/+50683189598">WhatsApp</a></li>
             </ul>
         </div>
     </div>
@@ -37,7 +36,7 @@
             <p>|</p>
             <a href="/privacidad">Política de privacidad</a>
         </div>
-        <p class="copyright"><?php echo date('Y')?> &copy; Todos los derechos reservados de RSL Electromecánica</p>
+        <p class="copyright"><?php echo date('Y')?> &copy; Todos los derechos reservados de Inbotscr</p>
     </div>
 </footer>
 

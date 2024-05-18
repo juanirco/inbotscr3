@@ -14,12 +14,14 @@ $router->get('/', [PagesController::class, 'inicio']);
 $router->get('/en', [PagesController::class, 'home']);
 $router->get('/nosotros', [PagesController::class, 'nosotros']);
 $router->get('/us', [PagesController::class, 'us']);
-$router->get('/servicios', [PagesController::class, 'servicios']);
-$router->get('/services', [PagesController::class, 'services']);
-$router->get('/proyectos', [PagesController::class, 'proyectos']);
-$router->get('/proyecto', [PagesController::class, 'proyecto']);
-$router->get('/projects', [PagesController::class, 'projects']);
-$router->get('/project', [PagesController::class, 'project']);
+$router->get('/chatbots', [PagesController::class, 'chatbots']);
+$router->get('/chatbots_en', [PagesController::class, 'chatbots_en']);
+$router->get('/bots_con_ia', [PagesController::class, 'bots_con_ia']);
+$router->get('/ai_bots', [PagesController::class, 'ai_bots']);
+$router->get('/marketing_conversacional', [PagesController::class, 'marketing_conversacional']);
+$router->get('/chat_marketing', [PagesController::class, 'chat_marketing']);
+$router->get('/desarrollo_web', [PagesController::class, 'desarrollo_web']);
+$router->get('/web_development', [PagesController::class, 'web_development']);
 $router->get('/contacto', [PagesController::class, 'contacto']);
 $router->get('/contact', [PagesController::class, 'contact']);
 $router->post('/contacto', [PagesController::class, 'contacto']);
@@ -27,7 +29,7 @@ $router->post('/contact', [PagesController::class, 'contact']);
 $router->get('/privacidad', [PagesController::class, 'privacidad']);
 $router->get('/privacy', [PagesController::class, 'privacy']);
 $router->get('/condiciones', [PagesController::class, 'condiciones']);
-$router->get('/conditions', [PagesController::class, 'conditions']);
+$router->get('/conditions', [PagesController::class, 'terms']);
 // The way it works is route and then the function name, I mean the ones inside the quatation marks.
 
 // Login

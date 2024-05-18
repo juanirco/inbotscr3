@@ -33,9 +33,9 @@ class ContactEmail {
             $email->Password = $_ENV['EMAIL_PASS'];
             $email->SMTPSecure = 'tls';            //Enable implicit TLS encryption
         
-            $email->setFrom('info@rslcr.com', 'RSLCR.COM | DO NOT REPLY!!');
-            $email->addAddress('info@rslcr.com');
-            $email->Subject = 'RSLCR.COM - Nuevo mensaje de: ' . $this->name . ' ' . $this->lastname;
+            $email->setFrom('info@inbotscr.com', 'INBOTSCR.COM | DO NOT REPLY!!');
+            $email->addAddress('info@inbotscr.com');
+            $email->Subject = 'INBOTSCR.COM - Nuevo mensaje de: ' . $this->name . ' ' . $this->lastname;
             //Content
             $email->isHTML(true);                                  //Set email format to HTML
             $email->CharSet = 'UTF-8';
@@ -58,9 +58,8 @@ class ContactEmail {
     }
 
     public function automatic_response() {
-        $our_number = "+506 4702-0720";
-        $our_address = "Plaza Panorama, ";
-        $our_address .= "segundo piso, local #11";
+        $our_number = "+506 83189598";
+        $our_address = "Alajuela, Costa Rica";
         $email = new PHPMailer();
         try {
             //Server settings
@@ -73,7 +72,7 @@ class ContactEmail {
             $email->SMTPSecure = 'tls';            //Enable implicit TLS encryption
 
             //Recipients
-            $email->setFrom('info@rslcr.com');
+            $email->setFrom('info@inbotscr.com');
             $email->addAddress($this->email);
             $email->Subject = 'Recibimos tu mensaje';
             //Content
@@ -85,7 +84,7 @@ class ContactEmail {
             $content .= "<p> Si tu no solicitaste que nos comunicaramos contigo o crees que esto puede ser un error, puedes indicarnoslo a este mismo correo para evitar futuras interacciones de nuestra parte.</p>";
             $content .= "<p><br></p>";
             $content .= "<p> Saludos cordiales,";
-            $content .= "<p> Equipo de RSL Electromecanica. <br>";
+            $content .= "<p> Equipo de Inbotscr. <br>";
             $content .= "Teléfono: " . $our_number . "<br>";
             $content .= "Dirección: " . $our_address . "</p>";
             $content .= '</html>';
@@ -99,9 +98,8 @@ class ContactEmail {
     }
 
     public function automatic_response_en() {
-        $our_number = "+506 4702-0720";
-        $our_address = "Plaza Panorama, ";
-        $our_address .= "second floor, local #11";
+        $our_number = "+506 83189598";
+        $our_address = "Alajuela, Costa Rica";
         $email = new PHPMailer();
         try {
             //Server settings
@@ -114,7 +112,7 @@ class ContactEmail {
             $email->SMTPSecure = 'tls';            //Enable implicit TLS encryption
     
             //Recipients
-            $email->setFrom('info@rslcr.com');
+            $email->setFrom('info@inbotscr.com');
             $email->addAddress($this->email);
             $email->Subject = 'We received your message';
             //Content
@@ -126,7 +124,7 @@ class ContactEmail {
             $content .= "<p> If you did not request us to contact you or believe this may be an error, you can let us know at this email to avoid future interactions from our part.</p>";
             $content .= "<p><br></p>";
             $content .= "<p> Best regards,";
-            $content .= "<p> RSL Electromechanical Team. <br>";
+            $content .= "<p> Inbotscr Team. <br>";
             $content .= "Phone: " . $our_number . "<br>";
             $content .= "Address: " . $our_address . "</p>";
             $content .= '</html>';

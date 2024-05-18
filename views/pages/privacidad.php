@@ -4,7 +4,7 @@
         <h1>Política de Privacidad</h1>
     
         <h4>Recopilación de Información</h4>
-        <p>En RSL Electromecánica, valoramos la privacidad de nuestros clientes y visitantes en línea. Por lo tanto, solo recopilamos información personal cuando es proporcionada de forma voluntaria, como a través de formularios de contacto o consultas por correo electrónico. La información que recopilamos puede incluir nombres, direcciones de correo electrónico, números de teléfono y otra información relevante para proporcionar nuestros servicios de construcción electromecánica y responder a consultas.</p>
+        <p>En Inbotscr, valoramos la privacidad de nuestros clientes y visitantes en línea. Por lo tanto, solo recopilamos información personal cuando es proporcionada de forma voluntaria, como a través de formularios de contacto o consultas por correo electrónico. La información que recopilamos puede incluir nombres, direcciones de correo electrónico, números de teléfono y otra información relevante para proporcionar nuestros servicios y responder a consultas.</p>
     
         <h4>Uso de la Información</h4>
         <p>La información personal recopilada se utiliza únicamente con el propósito de proporcionar nuestros servicios, responder a consultas, procesar solicitudes y mejorar la experiencia del usuario en nuestro sitio web. No compartimos esta información con terceros, excepto cuando sea necesario para cumplir con los servicios solicitados por el usuario o requerido por ley.</p>

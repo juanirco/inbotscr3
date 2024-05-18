@@ -1,6 +1,6 @@
 {
-    "name": "juan/rslcr",
-    "description": "proyecto real para empresa de electromecanica en php mvc",
+    "name": "juan/inbotscr",
+    "description": "proyecto real para Inbotscr 3.0 en php mvc",
     "type": "project",
     "autoload": {
         "psr-4": {
