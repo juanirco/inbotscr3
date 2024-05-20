@@ -13,75 +13,87 @@ class PagesController {
         // place where view can be found and the code inside the brackets is what we pass to the view
         $router->render('pages/inicio',[
             'title' => 'Inicio',
+            'description' => 'Chatbots y Desarrollo Web en Costa Rica, USA y Latinamérica. Contáctanos para mejorar la experiencia de tus usuarios e impulsar tu negocio.'
         ]);
     }
     public static function home(Router $router){
         // place where view can be found and the code inside the brackets is what we pass to the view
         $router->render('pages/home',[
             'title' => 'Home',
+            'description' => 'Chatbots & Web Development in Costa Rica, USA & Latin America. Contact us to improve your customers\'s experience while boosting your business'
         ]);
     }
 
     public static function nosotros(Router $router){
         // place where view can be found and the code inside the brackets is what we pass to the view
         $router->render('pages/nosotros',[
-            'title' => 'Nosotros'
+            'title' => 'Nosotros',
+            'description' => 'Chatbots y Desarrollo Web en Costa Rica, USA y Latinamérica. Contáctanos para mejorar la experiencia de tus usuarios e impulsar tu negocio.'
         ]);
     }
     public static function us(Router $router){
         // place where view can be found and the code inside the brackets is what we pass to the view
         $router->render('pages/us',[
-            'title' => 'About Us'
+            'title' => 'About Us',
+            'description' => 'Chatbots & Web Development in Costa Rica, USA & Latin America. Contact us to improve your customers\'s experience while boosting your business'
         ]);
     }
 
     public static function chatbots(Router $router){
         // place where view can be found and the code inside the brackets is what we pass to the view
         $router->render('pages/chatbots',[
-            'title' => 'Chatbots'
+            'title' => 'Chatbots',
+            'description' => 'Chatbots en Costa Rica. Contáctanos para mejorar la expe, USA y Latinaméricariencia de tus usuarios e impulsar tu negocio.'
         ]);
     }
     public static function chatbots_en(Router $router){
         // place where view can be found and the code inside the brackets is what we pass to the view
         $router->render('pages/chatbots_en',[
-            'title' => 'Chatbots'
+            'title' => 'Chatbots',
+            'description' => 'Chatbots in Costa Rica, USA & Latin America. Contact us to improve your customers\'s experience while boosting your business'
         ]);
     }
 
     public static function bots_con_ia(Router $router){
         // place where view can be found and the code inside the brackets is what we pass to the view
         $router->render('pages/botsIA',[
-            'title' => 'Bots con Inteligencia Artificial'
+            'title' => 'Bots con Inteligencia Artificial',
+            'description' => 'Chatbots con IA en Costa Rica, USA y Latinamérica. Contáctanos para mejorar la experiencia de tus usuarios e impulsar tu negocio.'
         ]);
     }
     public static function ai_bots(Router $router){
         // place where view can be found and the code inside the brackets is what we pass to the view
         $router->render('pages/ai_bots',[
-            'title' => 'AI Bots'
+            'title' => 'AI Bots',
+            'description' => 'AI-powered Bots in Costa Rica, USA & Latin America. Contact us to improve your customers\'s experience while boosting your business'
         ]);
     }
     public static function marketing_conversacional(Router $router){
         // place where view can be found and the code inside the brackets is what we pass to the view
         $router->render('pages/marketing_conversacional',[
-            'title' => 'Marketing Conversacional'
+            'title' => 'Marketing Conversacional',
+            'description' => 'Marketing Conversacional en Costa Rica, USA y Latinamérica. Contáctanos para mejorar la experiencia de tus usuarios e impulsar tu negocio.'
         ]);
     }
     public static function chat_marketing(Router $router){
         // place where view can be found and the code inside the brackets is what we pass to the view
         $router->render('pages/chat_marketing',[
-            'title' => 'Chat Marketing'
+            'title' => 'Chat Marketing',
+            'description' => 'Chat marketing in Costa Rica, USA & Latin America. Contact us to improve your customers\'s experience while boosting your business'
         ]);
     }
     public static function desarrollo_web(Router $router){
         // place where view can be found and the code inside the brackets is what we pass to the view
         $router->render('pages/desarrollo_web',[
-            'title' => 'Desarrollo Web'
+            'title' => 'Desarrollo Web',
+            'description' => 'Desarrollo Web en Costa Rica, USA y Latinamérica. Contáctanos para mejorar la experiencia de tus usuarios e impulsar tu negocio.'
         ]);
     }
     public static function web_development(Router $router){
         // place where view can be found and the code inside the brackets is what we pass to the view
         $router->render('pages/web_development',[
-            'title' => 'Web Development'
+            'title' => 'Web Development',
+            'description' => 'Web Development in Costa Rica, USA & Latin America. Contact us to improve your customers\'s experience while boosting your business'
         ]);
     }
 
@@ -98,8 +110,9 @@ class PagesController {
         }
         $alerts = User::getAlerts();
         $router->render('pages/contacto',[
+            'alerts' => $alerts,
             'title' => 'Contacto',
-            'alerts' => $alerts
+            'description' => 'Chatbots y Desarrollo Web en Costa Rica, USA y Latinamérica. Contáctanos para mejorar la experiencia de tus usuarios e impulsar tu negocio.'
         ]);
     }
     public static function contact(Router $router){
@@ -114,35 +127,40 @@ class PagesController {
         }
         $alerts = User::getAlerts();
         $router->render('pages/contact',[
+            'alerts' => $alerts,
             'title' => 'Contact',
-            'alerts' => $alerts
+            'description' => 'Chatbots & Web Development in Costa Rica, USA & Latin America. Contact us to improve your customers\'s experience while boosting your business'
         ]);
     }
     public static function privacidad(Router $router){
         // place where view can be found and the code inside the brackets is what we pass to the view
         $router->render('pages/privacidad',[
-            'title' => 'Politicas de Privacidad'
+            'title' => 'Politicas de Privacidad',
+            'description' => 'Chatbots y Desarrollo Web en Costa Rica, USA y Latinamérica. Contáctanos para mejorar la experiencia de tus usuarios e impulsar tu negocio.'
         ]);
     }
 
     public static function privacy(Router $router){
         // place where view can be found and the code inside the brackets is what we pass to the view
         $router->render('pages/privacy',[
-            'title' => 'Privacy Policy'
+            'title' => 'Privacy Policy',
+            'description' => 'Chatbots & Web Development in Costa Rica, USA & Latin America. Contact us to improve your customers\'s experience while boosting your business'
         ]);
     }
 
     public static function condiciones(Router $router){
         // place where view can be found and the code inside the brackets is what we pass to the view
         $router->render('pages/condiciones',[
-            'title' => 'Términos y Condiciones'
+            'title' => 'Términos y Condiciones',
+            'description' => 'Chatbots y Desarrollo Web en Costa Rica, USA y Latinamérica. Contáctanos para mejorar la experiencia de tus usuarios e impulsar tu negocio.'
         ]);
     }
 
     public static function terms(Router $router){
         // place where view can be found and the code inside the brackets is what we pass to the view
         $router->render('pages/terms',[
-            'title' => 'Terms & Conditions'
+            'title' => 'Terms & Conditions',
+            'description' => 'Chatbots & Web Development in Costa Rica, USA & Latin America. Contact us to improve your customers\'s experience while boosting your business'
         ]);
     }
     
