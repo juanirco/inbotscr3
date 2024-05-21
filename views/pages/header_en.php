@@ -11,7 +11,7 @@
                     <p class="services_BS_a">Services</p>
                     <a href="/contact">Contact</a>
                 </nav>
-                <a href="/">
+                <a href="<?php echo $translate_link;?>">
                     <img src="../../build/img/translate.svg" alt="Translate icon" class="translate_btn">
                 </a>
             </div>
@@ -50,7 +50,7 @@
                 <a href="/contact">Contact</a>
             </nav>
             <div class="down">
-                <a href="/">
+                <a href="<?php echo $translate_link;?>">
                     <img src="../../build/img/translate.svg" alt="Translate icon" class="translate_btn">
                 </a>
             </div>
