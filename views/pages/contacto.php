@@ -35,10 +35,12 @@
                     <textarea name="message" id="" cols="30" rows="10" placeholder="Tu Mensaje" required></textarea>
                 </div>
 
-            <!-- Añadir reCAPTCHA widget -->
-            <div class="g-recaptcha" data-sitekey="6LeOBOspAAAAAIrIlgdjNUC_lxQqARPZ8leibTi1"></div>
+                <!-- reCAPTCHA Widget -->
+                <div class="g-recaptcha" data-sitekey="6LdbDespAAAAAGudHS96ZZJ4Y1jdnzg23kyzj0ms"></div>
 
-            <input type="submit" class="button" value="Enviar Mensaje">
-        </form>
+                <input type="submit" class="button" value="Enviar Mensaje">
+            </form>
+        </div>
+    </section>
 </div>
 <?php include_once __DIR__ . '/footer.php'?>

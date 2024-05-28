@@ -17,6 +17,8 @@
     </noscript>
     <link rel="stylesheet" href="build/css/app.css">
     <link rel="preload" href="../build/img/logoInbotscrBar.svg" as="image">
+    <!-- reCAPTCHA Script -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 <div class="container_background">

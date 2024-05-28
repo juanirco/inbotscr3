@@ -112,41 +112,22 @@ class PagesController {
 
     public static function contacto(Router $router){
         // place where view can be found and the code inside the brackets is what we pass to the view
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $recaptcha_secret = '6LeOBOspAAAAAD3FTqbpmk8oM3NAZeMu6fyNU_r9';
+        if($_SERVER['REQUEST_METHOD'] === 'POST') {
+            // Verificar reCAPTCHA
+            $recaptcha_secret = '6LdbDespAAAAAH-7cD3GEb2mniXqi2p4LVZ0Ul7R';
             $recaptcha_response = $_POST['g-recaptcha-response'];
-            $remoteip = $_SERVER['REMOTE_ADDR'];
-    
-            $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-            $recaptcha_data = [
-                'secret' => $recaptcha_secret,
-                'response' => $recaptcha_response,
-                'remoteip' => $remoteip
-            ];
-    
-            $options = [
-                'http' => [
-                    'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
-                    'method'  => 'POST',
-                    'content' => http_build_query($recaptcha_data)
-                ]
-            ];
-            $context  = stream_context_create($options);
-            $result = file_get_contents($recaptcha_url, false, $context);
-            $resultJson = json_decode($result);
-    
-            if ($resultJson->success != true) {
-                // Error handling: reCAPTCHA failed
-                $alerts = User::setAlert('error', 'Verificación de reCAPTCHA fallida. Inténtalo de nuevo.');
+            $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$recaptcha_secret&response=$recaptcha_response");
+            $response_keys = json_decode($response, true);
+
+            if(intval($response_keys["success"]) !== 1) {
+                $alerts = User::setAlert('error', 'reCAPTCHA verification failed. Please try again.');
             } else {
-                // Procesar el formulario
                 $contact_email = new ContactEmail($_POST['email'], $_POST['name'], $_POST['lastname'], $_POST['message']);
                 $contact_email->receive_message();
                 $contact_email->automatic_response();
-    
+
                 $alerts = User::setAlert('success', 'Mensaje enviado');
                 header('refresh: 2.5; /contacto');
-                exit;
             }
         }
         $alerts = User::getAlerts();
@@ -157,15 +138,26 @@ class PagesController {
             'translate_link' => '/contact'
         ]);
     }
+
     public static function contact(Router $router){
         // place where view can be found and the code inside the brackets is what we pass to the view
         if($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $contact_email = new ContactEmail($_POST['email'], $_POST['name'], $_POST['lastname'], $_POST['message']);
-            $contact_email->receive_message();
-            $contact_email->automatic_response_en();
+            // Verificar reCAPTCHA
+            $recaptcha_secret = '6LdbDespAAAAAH-7cD3GEb2mniXqi2p4LVZ0Ul7R';
+            $recaptcha_response = $_POST['g-recaptcha-response'];
+            $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$recaptcha_secret&response=$recaptcha_response");
+            $response_keys = json_decode($response, true);
 
-            $alerts = User::setAlert('success', 'Message sent');
-            header('refresh: 2.5; /contact');
+            if(intval($response_keys["success"]) !== 1) {
+                $alerts = User::setAlert('error', 'reCAPTCHA verification failed. Please try again.');
+            } else {
+                $contact_email = new ContactEmail($_POST['email'], $_POST['name'], $_POST['lastname'], $_POST['message']);
+                $contact_email->receive_message();
+                $contact_email->automatic_response_en();
+
+                $alerts = User::setAlert('success', 'Message sent');
+                header('refresh: 2.5; /contact');
+            }
         }
         $alerts = User::getAlerts();
         $router->render('pages/contact',[
