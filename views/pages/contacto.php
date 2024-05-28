@@ -35,9 +35,10 @@
                     <textarea name="message" id="" cols="30" rows="10" placeholder="Tu Mensaje" required></textarea>
                 </div>
 
-                <input type="submit" class="button" value="Enviar Mensaje">
-            </form>
-        </div>
-    </section>
+            <!-- Añadir reCAPTCHA widget -->
+            <div class="g-recaptcha" data-sitekey="6LdQAOspAAAAAA4mfhmfqQqYgiMSGUH6KBbEG1aJ"></div>
+
+            <input type="submit" class="button" value="Enviar Mensaje">
+        </form>
 </div>
 <?php include_once __DIR__ . '/footer.php'?>

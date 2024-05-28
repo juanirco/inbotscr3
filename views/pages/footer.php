@@ -42,5 +42,5 @@
 
 <?php 
     $script = '<script src="build/js/app.js"></script>';
-
+    $script .= '<script src="https://www.google.com/recaptcha/api.js" async defer></script>';
 ?>
