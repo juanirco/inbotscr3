@@ -36,7 +36,7 @@
                 </div>
 
             <!-- Añadir reCAPTCHA widget -->
-            <div class="g-recaptcha" data-sitekey="6LdQAOspAAAAAA4mfhmfqQqYgiMSGUH6KBbEG1aJ"></div>
+            <div class="g-recaptcha" data-sitekey="6LeOBOspAAAAAIrIlgdjNUC_lxQqARPZ8leibTi1"></div>
 
             <input type="submit" class="button" value="Enviar Mensaje">
         </form>

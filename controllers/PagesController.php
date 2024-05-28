@@ -113,7 +113,7 @@ class PagesController {
     public static function contacto(Router $router){
         // place where view can be found and the code inside the brackets is what we pass to the view
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $recaptcha_secret = '6LdQAOspAAAAAJ-pkyqW8YDYtTKo6tm3H2mjWFEH';
+            $recaptcha_secret = '6LeOBOspAAAAAD3FTqbpmk8oM3NAZeMu6fyNU_r9';
             $recaptcha_response = $_POST['g-recaptcha-response'];
             $remoteip = $_SERVER['REMOTE_ADDR'];
     
