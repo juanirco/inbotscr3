@@ -73,4 +73,4 @@ $xml .= '
 </urlset>';
 
 // Guardar el contenido en un archivo sitemap.xml
-file_put_contents(__DIR__ . '/../public/sitemap.xml', $xml);
+file_put_contents(__DIR__ . '/../public/sitemap2.xml', $xml);
