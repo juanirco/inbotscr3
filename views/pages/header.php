@@ -26,7 +26,7 @@
         <div class="mobile_nav">
             <div class="up">
                 <div></div>
-                <img src="../../build/img/expand_bar.svg" alt="icono menu" class="expand_nav_btn show_btn">
+                <img loading="lazy" src="../../build/img/expand_bar.svg" alt="icono menu" class="expand_nav_btn show_btn">
             </div>
             <div class="mobile_nav_expanded">
                 <div class="up">
