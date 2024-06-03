@@ -25,9 +25,7 @@
         </div>  <!-- div BigS_nav-->
         <div class="mobile_nav">
             <div class="up">
-                <a href="/">
-                    <img loading="lazy" src="../build/img/logoInbotscrBar.svg" alt="Logotipo de Inbotscr">
-                </a>
+                <div></div>
                 <img src="../../build/img/expand_bar.svg" alt="icono menu" class="expand_nav_btn show_btn">
             </div>
             <div class="mobile_nav_expanded">
