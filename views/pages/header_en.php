@@ -2,7 +2,7 @@
     <div class="bigS_nav">
         <div class="main_nav">
             <a href="/en" class="left">
-                <img src="../build/img/logoInbotscrBar.svg" alt="Inbotscr Logo">
+                <img src="../build/img/new_iso.svg" alt="Inbotscr Logo">
             </a>
             <div class="right">
                 <nav class="nav">
@@ -26,14 +26,14 @@
     <div class="mobile_nav">
         <div class="up">
             <a href="/">
-                <img src="../build/img/logoInbotscrBar.svg" alt="Inbotscr Logo">
+                <img src="../build/img/new_iso.svg" alt="Inbotscr Logo">
             </a>
             <img src="../../build/img/expand_bar.svg" alt="menu icon" class="expand_nav_btn show_btn">
         </div>
         <div class="mobile_nav_expanded">
             <div class="up">
                 <a href="/">
-                    <img src="../build/img/logoInbotscrBar.svg" alt="Inbotscr Logo">
+                    <img src="../build/img/new_iso.svg" alt="Inbotscr Logo">
                 </a>
                 <img src="../../build/img/collapse_bar.svg" alt="menu icon" class="collapse_nav_btn">
             </div>

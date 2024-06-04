@@ -1,8 +1,6 @@
 <?php include_once __DIR__ . '/header_en.php'?>
-<div class="us">
-    <h1><?php echo $title?></h1>
+<img src="../../build/img/cover_logo.png" alt="">
     <div class="business">
-        <img src="../../build/img/logoInbotscr.svg" alt="">
         <div class="us_text">
             <p>Our mission is clear: to make an impact and drive the growth and recognition our clients deserve.</p>
             <p>Our journey began with the creation of chatbots in an ever-evolving digital world. In 2018, our commitment to excellence led us to be recognized as one of the winning teams in a prestigious global chatbot building competition.</p>

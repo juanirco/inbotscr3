@@ -8,9 +8,6 @@
         </div>
     </main>
     <section class="section_content">
-        <h1 class="title">
-            <?php echo $title?>
-        </h1>
         <div class="section_div">
             <?php include_once __DIR__ . '/../templates/alerts.php';?>
             <p>Si buscas cotizar sobre chatbots, bots con inteligencia artificial, marketing conversacional o desarrollo web, en Inbotscr te ayudamos.</p>
