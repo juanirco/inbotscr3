@@ -1,6 +1,6 @@
 <?php include_once __DIR__ . '/header.php'?>
 <div class="us">
-<main class="hero">
+    <main class="hero">
 
     </main>
     <div class="business">

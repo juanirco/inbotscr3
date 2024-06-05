@@ -1,5 +1,8 @@
 <?php include_once __DIR__ . '/header_en.php'?>
-<img src="../../build/img/cover_logo.png" alt="">
+<div class="us">
+    <main class="hero">
+
+    </main>
     <div class="business">
         <div class="us_text">
             <p>Our mission is clear: to make an impact and drive the growth and recognition our clients deserve.</p>
