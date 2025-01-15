@@ -120,7 +120,7 @@ class PagesController {
             $response_keys = json_decode($response, true);
 
             if(intval($response_keys["success"]) !== 1) {
-                $alerts = User::setAlert('error', 'reCAPTCHA verification failed. Please try again.');
+                $alerts = User::setAlert('error', 'La verificación del reCAPTCHA falló. Por favor intenta nuevamente.');
             } else {
                 $contact_email = new ContactEmail($_POST['email'], $_POST['name'], $_POST['lastname'], $_POST['message']);
                 $contact_email->receive_message();
