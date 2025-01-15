@@ -16,7 +16,7 @@
             <h3>Contacto</h3>
             <div class="info_contact">
                 <p>info@inbotscr.com</p>
-                <p>+506 8318-9598</p>
+                <p>+506 8906-7373</p>
                 <p>Alajuela, Costa Rica</p>
             </div>
         </div>
@@ -25,7 +25,7 @@
             <ul class="links-list">
                 <li><a href="https://www.facebook.com/inbotscr">Facebook</a></li>
                 <li><a href="https://www.instagram.com/inbotscr">Instagram</a></li>
-                <li><a href="https://wa.me/+50683189598">WhatsApp</a></li>
+                <li><a href="https://wa.me/+50689067373">WhatsApp</a></li>
             </ul>
         </div>
     </div>
