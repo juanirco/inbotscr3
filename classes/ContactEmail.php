@@ -6,7 +6,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use League\OAuth2\Client\Provider\Google;
 
-require 'vendor/autoload.php';
+
 
 class ContactEmail {
     public $email;
