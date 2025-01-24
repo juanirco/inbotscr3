@@ -3,7 +3,7 @@
     <main class="hero">
         <div class="hero_content">
             <h1>
-                <span>Expertos en Marketing Conversacional Chatbots y Desarrollo Web <-> Contactanos para comenzar a sobresalir en el mundo digital</span>
+                <span>Somos Expertos En Smartbots (Chatbots impulsados por IA) <-> Contactanos para conectar mejor, más rápido y con menos esfuerzo.</span>
             </h1>
         </div>
     </main>
@@ -31,7 +31,7 @@
         <div class="intro_div">
             <h2 class="intro_title">¿Como?</h2>
             <div class="intro_text">
-                <h3>Desarrollo web y chatbots:</h3>
+                <h3>Desarrollo web y Smartbots:</h3>
                 <p>Brindamos a tus clientes la posibilidad de encontrar información de tu negocio en todo momento, confirmando tu presencia online 24/7 y alineando tu negocio a brindar la mejor experiencia posible.</p>
             </div>
             <div class="intro_text">

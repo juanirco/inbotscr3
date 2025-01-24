@@ -3,7 +3,6 @@
 namespace Classes;
 
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 class ContactEmail {
@@ -22,38 +21,50 @@ class ContactEmail {
     }
     
     public function receive_message() {
-        $email = new PHPMailer();
+        $mail = new PHPMailer(true);
         try {
-            //Server settings
-            $email->isSMTP();                                            //Send using SMTP
-            $email->Host = $_ENV['EMAIL_HOST'];
-            $email->SMTPAuth = true;
-            $email->Port = $_ENV['EMAIL_PORT'];
-            $email->Username = $_ENV['EMAIL_USER'];
-            $email->Password = $_ENV['EMAIL_PASS'];
-            $email->SMTPSecure = 'tls';            //Enable implicit TLS encryption
-        
-            $email->setFrom('info@inbotscr.com', 'INBOTSCR.COM | DO NOT REPLY!!');
-            $email->addAddress('info@inbotscr.com');
-            $email->Subject = 'INBOTSCR.COM - Nuevo mensaje de: ' . $this->name . ' ' . $this->lastname;
-            //Content
-            $email->isHTML(true);                                  //Set email format to HTML
-            $email->CharSet = 'UTF-8';
+            // Configuración del servidor
+            $mail->isSMTP();                                            
+            $mail->Host       = 'smtp.gmail.com';                      // Servidor SMTP de Gmail
+            $mail->SMTPAuth   = true;                                  
+            $mail->Username   = $_ENV['EMAIL_USER'];                   // Tu dirección de Gmail/Google Workspace
+            $mail->Password   = $_ENV['EMAIL_PASS'];                   // Tu contraseña de Gmail/Google Workspace o App Password
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;        // Enable TLS encryption
+            $mail->Port       = 587;                                    // Puerto SMTP de Gmail
+
+            // Configuración del remitente y destinatario
+            $mail->setFrom('info@inbotscr.com', 'INBOTSCR.COM | DO NOT REPLY!!'); // Dirección de tu dominio
+            $mail->addAddress('info@inbotscr.com', 'INBOTSCR.COM');            // Dirección receptora
+
+            // Agregar Reply-To para que las respuestas vayan al usuario
+            if (filter_var($this->email, FILTER_VALIDATE_EMAIL)) {
+                $mail->addReplyTo($this->email, $this->name . ' ' . $this->lastname);
+            } else {
+                throw new Exception('La dirección de correo proporcionada no es válida.');
+            }
+
+            // Asunto del correo
+            $mail->Subject = 'INBOTSCR.COM - Nuevo mensaje de: ' . $this->name . ' ' . $this->lastname;
+
+            // Contenido del correo
+            $mail->isHTML(true);                                         
+            $mail->CharSet = 'UTF-8';
 
             $content = '<html>';
-            $content .= "<p>Nuevo mensaje recibido desde el formulario de contacto. Recuerda no responder a este correo directamente, debes copiar o darle click en la dirección de correo de abajo";
-            $content .= "<p><strong>Email:</strong> " . $this->email . "<br>";
-            $content .= "<p><strong>Nombre:</strong> " . $this->name . "<br>";
-            $content .= "<strong>Apellido:</strong> " . $this->lastname . "</p>";
+            $content .= "<p>Nuevo mensaje recibido desde el formulario de contacto.</p>";
+            $content .= "<p><strong>Email:</strong> " . htmlspecialchars($this->email) . "<br>";
+            $content .= "<strong>Nombre:</strong> " . htmlspecialchars($this->name) . "<br>";
+            $content .= "<strong>Apellido:</strong> " . htmlspecialchars($this->lastname) . "</p>";
             $content .= "<p><strong>Mensaje:</strong></p>";
-            $content .= "<p>" . $this->message . "</p>";
+            $content .= "<p>" . nl2br(htmlspecialchars($this->message)) . "</p>";
             $content .= '</html>';
-            $email->Body    = $content;
+            $mail->Body = $content;
 
-            $email->send();
-
+            // Enviar el correo
+            $mail->send();
+            echo 'El mensaje ha sido enviado exitosamente.';
         } catch (Exception $e) {
-            echo "El Mensaje no pudo enviarse. Mailer Error: {$email->ErrorInfo}";
+            echo "El mensaje no pudo enviarse. Error: {$mail->ErrorInfo}";
         }
     }
 
