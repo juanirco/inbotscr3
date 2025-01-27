@@ -40,7 +40,7 @@ class ContactEmail {
             $provider = new Google([
                 'clientId'     => $_ENV['EMAIL_USER'],
                 'clientSecret' => $_ENV['EMAIL_PASS'],
-                'redirectUri'  => $_ENV['EMAIL_REDIRECT_URI'],
+                'redirectUri'  => 'https://www.inbotscr.com',
             ]);
             
             try {
