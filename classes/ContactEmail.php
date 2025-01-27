@@ -42,6 +42,11 @@ class ContactEmail {
                 'clientId'     => $_ENV['EMAIL_USER'], // Client ID
                 'clientSecret' => $_ENV['EMAIL_PASS'], // Client Secret
                 'redirectUri'  => 'https://www.inbotscr.com',
+                'scopes'       => [
+                    'https://www.googleapis.com/auth/gmail.modify',
+                    'https://www.googleapis.com/auth/gmail.readonly',
+                    'https://www.googleapis.com/auth/gmail.send',
+                ],
             ]);
 
             $oauthToken = $provider->getAccessToken('refresh_token', [
