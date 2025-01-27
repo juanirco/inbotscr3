@@ -11,11 +11,8 @@ class ContactEmail {
     public $name;
     public $lastname;
     public $message;
-    public $our_number;
 
-
-    public function __construct($email, $name, $lastname, $message)
-    {
+    public function __construct($email, $name, $lastname, $message) {
         $this->email = $email;    
         $this->name = $name;    
         $this->lastname = $lastname;    
@@ -23,17 +20,31 @@ class ContactEmail {
     }
     
     public function receive_message() {
+        // Mostrar errores de PHP para depuración
+        ini_set('display_errors', 1);
+        ini_set('display_startup_errors', 1);
+        error_reporting(E_ALL);
+
         $mail = new PHPMailer(true);
 
         try {
+            // Depuración de PHPMailer
+            $mail->SMTPDebug = 3; // Nivel de depuración detallado
+            $mail->Debugoutput = 'html'; // Salida de depuración en formato HTML
+
+            // Verificación de variables de entorno
+            if (empty($_ENV['EMAIL_USER']) || empty($_ENV['EMAIL_PASS']) || empty($_ENV['EMAIL_TOKEN'])) {
+                throw new \Exception("Las variables de entorno no están configuradas correctamente.");
+            }
+
             // Configuración del servidor OAuth 2.0
             $provider = new Google([
-                'clientId'     => $_ENV['EMAIL_USER'], // Reemplaza con tu Client ID
-                'clientSecret' => $_ENV['EMAIL_PASS'], // Reemplaza con tu Client Secret
+                'clientId'     => $_ENV['EMAIL_USER'], // Client ID
+                'clientSecret' => $_ENV['EMAIL_PASS'], // Client Secret
             ]);
 
             $oauthToken = $provider->getAccessToken('refresh_token', [
-                'refresh_token' => $_ENV['EMAIL_TOKEN'] // Reemplaza con tu Refresh Token
+                'refresh_token' => $_ENV['EMAIL_TOKEN'], // Refresh Token
             ]);
 
             // Configuración del servidor SMTP
@@ -47,10 +58,10 @@ class ContactEmail {
             $mail->AuthType = 'XOAUTH2';
             $mail->setOAuth(new \PHPMailer\PHPMailer\OAuth([
                 'provider'      => $provider,
-                'clientId'      => $_ENV['EMAIL_USER'], // Reemplaza con tu Client ID
-                'clientSecret'  => $_ENV['EMAIL_PASS'], // Reemplaza con tu Client Secret
-                'refreshToken'  => $_ENV['EMAIL_TOKEN'], // Reemplaza con tu Refresh Token
-                'userName'      => 'info@inbotscr.com', // Tu dirección de correo
+                'clientId'      => $_ENV['EMAIL_USER'],
+                'clientSecret'  => $_ENV['EMAIL_PASS'],
+                'refreshToken'  => $_ENV['EMAIL_TOKEN'],
+                'userName'      => 'info@inbotscr.com',
             ]));
 
             // Configuración del remitente y destinatario
@@ -80,10 +91,12 @@ class ContactEmail {
             // Enviar el correo
             $mail->send();
             echo 'El mensaje ha sido enviado exitosamente.';
-        } catch (Exception $e) {
-            echo "El mensaje no pudo enviarse. Error: {$mail->ErrorInfo}";
+        } catch (\Exception $e) {
+            // Mostrar el error para depuración
+            echo "Ocurrió un error: " . $e->getMessage();
         }
     }
+
 
     public function automatic_response() {
         $our_number = "+506 83189598";
