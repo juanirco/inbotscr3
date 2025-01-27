@@ -41,6 +41,8 @@ class ContactEmail {
             $provider = new Google([
                 'clientId'     => $_ENV['EMAIL_USER'], // Client ID
                 'clientSecret' => $_ENV['EMAIL_PASS'], // Client Secret
+                'redirectUri'  => 'https://www.inbotscr.com',
+                'scopes'       => ['https://www.googleapis.com/auth/gmail.send'],
             ]);
 
             $oauthToken = $provider->getAccessToken('refresh_token', [
