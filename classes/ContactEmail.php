@@ -37,13 +37,21 @@ class ContactEmail {
                 throw new \Exception("Las variables de entorno no están configuradas correctamente.");
             }
 
-            // Configuración del servidor OAuth 2.0
             $provider = new Google([
-                'clientId'     => $_ENV['EMAIL_USER'], // Client ID
-                'clientSecret' => $_ENV['EMAIL_PASS'], // Client Secret
-                'redirectUri'  => 'https://www.inbotscr.com',
-                'scopes'       => ['https://www.googleapis.com/auth/gmail.send'],
+                'clientId'     => $_ENV['EMAIL_USER'],
+                'clientSecret' => $_ENV['EMAIL_PASS'],
+                'redirectUri'  => $_ENV['EMAIL_REDIRECT_URI'],
             ]);
+            
+            try {
+                $accessToken = $provider->getAccessToken('refresh_token', [
+                    'refresh_token' => $_ENV['EMAIL_TOKEN'],
+                ]);
+                echo 'Access Token: ' . $accessToken->getToken();
+            } catch (\Exception $e) {
+                echo 'Error: ' . $e->getMessage();
+            }
+            
 
             $oauthToken = $provider->getAccessToken('refresh_token', [
                 'refresh_token' => $_ENV['EMAIL_TOKEN'], // Refresh Token
