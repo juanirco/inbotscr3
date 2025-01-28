@@ -110,129 +110,61 @@ class PagesController {
     }
 
 
-    public static function contacto(Router $router) {
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    public static function contacto(Router $router){
+        // place where view can be found and the code inside the brackets is what we pass to the view
+        if($_SERVER['REQUEST_METHOD'] === 'POST') {
+            // Verificar reCAPTCHA
             $recaptcha_secret = '6LdbDespAAAAAH-7cD3GEb2mniXqi2p4LVZ0Ul7R';
             $recaptcha_response = $_POST['g-recaptcha-response'];
             $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$recaptcha_secret&response=$recaptcha_response");
             $response_keys = json_decode($response, true);
-    
-            if (intval($response_keys["success"]) !== 1) {
+
+            if(intval($response_keys["success"]) !== 1) {
                 $alerts = User::setAlert('error', 'La verificación del reCAPTCHA falló. Por favor intenta nuevamente.');
             } else {
-                $email = $_POST['email'];
-                $name = $_POST['name'];
-                $lastname = $_POST['lastname'];
-                $message = $_POST['message'];
-    
-                try {
-                    // Inicializar GmailAPI y enviar correo
-                    $gmail = new \Classes\GmailAPI();
-                    $subject = "INBOTSCR.COM - Nuevo mensaje de: $name $lastname";
-                    $body = "
-                        <html>
-                            <p>Nuevo mensaje recibido desde el formulario de contacto.</p>
-                            <p><strong>Email:</strong> $email</p>
-                            <p><strong>Nombre:</strong> $name</p>
-                            <p><strong>Apellido:</strong> $lastname</p>
-                            <p><strong>Mensaje:</strong></p>
-                            <p>$message</p>
-                        </html>
-                    ";
-    
-                    $gmail->sendEmail('info@inbotscr.com', $subject, $body, $email);
-    
-                    // Mensaje de respuesta automática
-                    $autoReplyBody = "
-                        <html>
-                            <p>Hola <strong>$name</strong>,</p>
-                            <p>Gracias por comunicarte con nosotros. Hemos recibido tu mensaje y muy pronto estaremos en contacto.</p>
-                            <p>Si no realizaste esta solicitud, por favor ignora este mensaje.</p>
-                            <br>
-                            <p>Saludos cordiales,</p>
-                            <p>Equipo de INBOTSCR.COM</p>
-                        </html>
-                    ";
-                    $gmail->sendEmail($email, 'Recibimos tu mensaje', $autoReplyBody);
-    
-                    $alerts = User::setAlert('success', 'Mensaje enviado');
-                } catch (\Exception $e) {
-                    $alerts = User::setAlert('error', 'No se pudo enviar el mensaje: ' . $e->getMessage());
-                }
+                $contact_email = new ContactEmail($_POST['email'], $_POST['name'], $_POST['lastname'], $_POST['message']);
+                $contact_email->receive_message();
+
+                $alerts = User::setAlert('success', 'Mensaje enviado');
+                header('refresh: 2.5; /contacto');
             }
         }
-    
         $alerts = User::getAlerts();
-        $router->render('pages/contacto', [
+        $router->render('pages/contacto',[
             'alerts' => $alerts,
             'title' => 'Contacto',
             'description' => 'Chatbots y Desarrollo Web en Costa Rica, USA y Latinamérica. Contáctanos para mejorar la experiencia de tus usuarios e impulsar tu negocio.',
             'translate_link' => '/contact'
         ]);
     }
-    
 
-    public static function contact(Router $router) {
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    public static function contact(Router $router){
+        // place where view can be found and the code inside the brackets is what we pass to the view
+        if($_SERVER['REQUEST_METHOD'] === 'POST') {
+            // Verificar reCAPTCHA
             $recaptcha_secret = '6LdbDespAAAAAH-7cD3GEb2mniXqi2p4LVZ0Ul7R';
             $recaptcha_response = $_POST['g-recaptcha-response'];
             $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$recaptcha_secret&response=$recaptcha_response");
             $response_keys = json_decode($response, true);
-    
-            if (intval($response_keys["success"]) !== 1) {
+
+            if(intval($response_keys["success"]) !== 1) {
                 $alerts = User::setAlert('error', 'reCAPTCHA verification failed. Please try again.');
             } else {
-                $email = $_POST['email'];
-                $name = $_POST['name'];
-                $lastname = $_POST['lastname'];
-                $message = $_POST['message'];
-    
-                try {
-                    // Initialize GmailAPI and send email
-                    $gmail = new \Classes\GmailAPI();
-                    $subject = "INBOTSCR.COM - New message from: $name $lastname";
-                    $body = "
-                        <html>
-                            <p>A new message has been received from the contact form.</p>
-                            <p><strong>Email:</strong> $email</p>
-                            <p><strong>Name:</strong> $name</p>
-                            <p><strong>Last Name:</strong> $lastname</p>
-                            <p><strong>Message:</strong></p>
-                            <p>$message</p>
-                        </html>
-                    ";
-    
-                    $gmail->sendEmail('info@inbotscr.com', $subject, $body, $email);
-    
-                    // Auto-reply message
-                    $autoReplyBody = "
-                        <html>
-                            <p>Hello <strong>$name</strong>,</p>
-                            <p>Thank you for contacting us. We have received your message and will get back to you soon.</p>
-                            <p>If you did not make this request, please ignore this message.</p>
-                            <br>
-                            <p>Best regards,</p>
-                            <p>The INBOTSCR.COM Team</p>
-                        </html>
-                    ";
-                    $gmail->sendEmail($email, 'We received your message', $autoReplyBody);
-    
-                    $alerts = User::setAlert('success', 'Message sent');
-                } catch (\Exception $e) {
-                    $alerts = User::setAlert('error', 'Failed to send the message: ' . $e->getMessage());
-                }
+                $contact_email = new ContactEmail($_POST['email'], $_POST['name'], $_POST['lastname'], $_POST['message']);
+                $contact_email->receive_message();
+
+                $alerts = User::setAlert('success', 'Message sent');
+                header('refresh: 2.5; /contact');
             }
         }
-    
         $alerts = User::getAlerts();
-        $router->render('pages/contact', [
+        $router->render('pages/contact',[
             'alerts' => $alerts,
             'title' => 'Contact',
-            'description' => 'Chatbots & Web Development in Costa Rica, USA & Latin America. Contact us to improve your customers\' experience while boosting your business.',
+            'description' => 'Chatbots & Web Development in Costa Rica, USA & Latin America. Contact us to improve your customers\'s experience while boosting your business',
             'translate_link' => '/contacto'
         ]);
     }
-    
     public static function privacidad(Router $router){
         // place where view can be found and the code inside the brackets is what we pass to the view
         $router->render('pages/privacidad',[
