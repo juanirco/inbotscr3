@@ -20,6 +20,7 @@ class ContactEmail {
     }
     
     public function receive_message() {
+        // Mostrar errores de PHP para depuración
         ini_set('display_errors', 1);
         ini_set('display_startup_errors', 1);
         error_reporting(E_ALL);
@@ -27,52 +28,35 @@ class ContactEmail {
         $mail = new PHPMailer(true);
 
         try {
-            $mail->SMTPDebug = 0; // Cambiar a 3 para depuración más detallada
-            $mail->Debugoutput = 'html';
+            // Depuración de PHPMailer
+            $mail->SMTPDebug = 3; // Nivel de depuración detallado
+            $mail->Debugoutput = 'html'; // Salida de depuración en formato HTML
 
-            // Validar variables de entorno
+            // Verificación de variables de entorno
             if (empty($_ENV['EMAIL_USER']) || empty($_ENV['EMAIL_PASS']) || empty($_ENV['EMAIL_TOKEN'])) {
-                throw new \Exception("Variables de entorno no configuradas correctamente.");
+                throw new \Exception("Las variables de entorno no están configuradas correctamente.");
             }
 
-            // Configuración de OAuth 2.0
+            // Configuración del servidor OAuth 2.0
             $provider = new Google([
-                'clientId'     => $_ENV['EMAIL_USER'],
-                'clientSecret' => $_ENV['EMAIL_PASS'],
-                'redirectUri'  => 'https://www.inbotscr.com', // Redirección autorizada
-                'scopes'       => ['https://www.googleapis.com/auth/gmail.send'], // Alcance necesario
+                'clientId'     => $_ENV['EMAIL_USER'], // Client ID
+                'clientSecret' => $_ENV['EMAIL_PASS'], // Client Secret
+                'redirectUri'  => 'https://www.inbotscr.com',
+                'scopes'       => ['https://mail.google.com/'],
             ]);
 
-            // Generar el token de acceso
-            try {
-                $oauthToken = $provider->getAccessToken('refresh_token', [
-                    'refresh_token' => $_ENV['EMAIL_TOKEN'], // Refresh Token
-                ]);
-            } catch (\League\OAuth2\Client\Provider\Exception\IdentityProviderException $e) {
-                // Capturar detalles del error
-                echo 'Detalles del error de token:<br>';
-                echo 'Código: ' . $e->getCode() . '<br>';
-                echo 'Mensaje: ' . $e->getMessage() . '<br>';
-                echo 'Datos de respuesta: ' . json_encode($e->getResponseBody(), JSON_PRETTY_PRINT) . '<br>';
-                exit;
-            }
+            $oauthToken = $provider->getAccessToken('refresh_token', [
+                'refresh_token' => $_ENV['EMAIL_TOKEN'], // Refresh Token
+            ]);
 
-            // Validar si el token de acceso es válido
-            if (!$oauthToken) {
-                throw new \Exception("No se pudo obtener el token de acceso. Verifica el Refresh Token y el alcance configurado.");
-            }
-
-            // Mostrar detalles del token (para depuración)
-            echo 'Token de acceso generado:<br>';
-            echo 'Token: ' . $oauthToken->getToken() . '<br>';
-            echo 'Expira en: ' . $oauthToken->getExpires() . '<br>';
-
-            // Configuración de PHPMailer con OAuth 2.0
+            // Configuración del servidor SMTP
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
+
+            // Configuración de OAuth 2.0 en PHPMailer
             $mail->AuthType = 'XOAUTH2';
             $mail->setOAuth(new \PHPMailer\PHPMailer\OAuth([
                 'provider'      => $provider,
@@ -82,19 +66,17 @@ class ContactEmail {
                 'userName'      => 'info@inbotscr.com',
             ]));
 
-            // El correo se enviará desde info@inbotscr.com
+            // Configuración del remitente y destinatario
             $mail->setFrom('info@inbotscr.com', 'INBOTSCR.COM | DO NOT REPLY!!');
-
-            // Configurar destinatario (tú recibirás este correo)
             $mail->addAddress('info@inbotscr.com', 'INBOTSCR.COM');
 
-            // Añadir Reply-To con el correo del visitante
             if (filter_var($this->email, FILTER_VALIDATE_EMAIL)) {
                 $mail->addReplyTo($this->email, $this->name . ' ' . $this->lastname);
             }
 
-            // Configurar asunto y contenido
-            $mail->Subject = 'Nuevo mensaje de: ' . $this->name . ' ' . $this->lastname;
+            $mail->Subject = 'INBOTSCR.COM - Nuevo mensaje de: ' . $this->name . ' ' . $this->lastname;
+
+            // Contenido del correo
             $mail->isHTML(true);
             $mail->CharSet = 'UTF-8';
 
@@ -108,13 +90,15 @@ class ContactEmail {
             $content .= '</html>';
             $mail->Body = $content;
 
-            // Enviar correo
+            // Enviar el correo
             $mail->send();
             echo 'El mensaje ha sido enviado exitosamente.';
         } catch (\Exception $e) {
+            // Mostrar el error para depuración
             echo "Ocurrió un error: " . $e->getMessage();
         }
     }
+
 
     public function automatic_response() {
         $our_number = "+506 83189598";
