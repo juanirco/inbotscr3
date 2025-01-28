@@ -27,7 +27,7 @@ class ContactEmail {
         $mail = new PHPMailer(true);
 
         try {
-            $mail->SMTPDebug = 0; // Cambiar a 3 para depuración
+            $mail->SMTPDebug = 0; // Cambiar a 3 para depuración más detallada
             $mail->Debugoutput = 'html';
 
             // Validar variables de entorno
@@ -39,17 +39,33 @@ class ContactEmail {
             $provider = new Google([
                 'clientId'     => $_ENV['EMAIL_USER'],
                 'clientSecret' => $_ENV['EMAIL_PASS'],
+                'redirectUri'  => 'https://www.inbotscr.com', // Redirección autorizada
+                'scopes'       => ['https://www.googleapis.com/auth/gmail.send'], // Alcance necesario
             ]);
 
             // Generar el token de acceso
-            $oauthToken = $provider->getAccessToken('refresh_token', [
-                'refresh_token' => $_ENV['EMAIL_TOKEN'], // Refresh Token
-            ]);
+            try {
+                $oauthToken = $provider->getAccessToken('refresh_token', [
+                    'refresh_token' => $_ENV['EMAIL_TOKEN'], // Refresh Token
+                ]);
+            } catch (\League\OAuth2\Client\Provider\Exception\IdentityProviderException $e) {
+                // Capturar detalles del error
+                echo 'Detalles del error de token:<br>';
+                echo 'Código: ' . $e->getCode() . '<br>';
+                echo 'Mensaje: ' . $e->getMessage() . '<br>';
+                echo 'Datos de respuesta: ' . json_encode($e->getResponseBody(), JSON_PRETTY_PRINT) . '<br>';
+                exit;
+            }
 
             // Validar si el token de acceso es válido
             if (!$oauthToken) {
                 throw new \Exception("No se pudo obtener el token de acceso. Verifica el Refresh Token y el alcance configurado.");
             }
+
+            // Mostrar detalles del token (para depuración)
+            echo 'Token de acceso generado:<br>';
+            echo 'Token: ' . $oauthToken->getToken() . '<br>';
+            echo 'Expira en: ' . $oauthToken->getExpires() . '<br>';
 
             // Configuración de PHPMailer con OAuth 2.0
             $mail->isSMTP();
