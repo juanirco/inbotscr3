@@ -41,9 +41,15 @@ class ContactEmail {
                 'clientSecret' => $_ENV['EMAIL_PASS'],
             ]);
 
+            // Generar el token de acceso
             $oauthToken = $provider->getAccessToken('refresh_token', [
-                'refresh_token' => $_ENV['EMAIL_TOKEN'],
+                'refresh_token' => $_ENV['EMAIL_TOKEN'], // Refresh Token
             ]);
+
+            // Validar si el token de acceso es válido
+            if (!$oauthToken) {
+                throw new \Exception("No se pudo obtener el token de acceso. Verifica el Refresh Token y el alcance configurado.");
+            }
 
             // Configuración de PHPMailer con OAuth 2.0
             $mail->isSMTP();
@@ -61,7 +67,7 @@ class ContactEmail {
             ]));
 
             // El correo se enviará desde info@inbotscr.com
-            $mail->setFrom('info@inbotscr.com', 'INBOTSCR.COM | Formulario de Contacto');
+            $mail->setFrom('info@inbotscr.com', 'INBOTSCR.COM | DO NOT REPLY!!');
 
             // Configurar destinatario (tú recibirás este correo)
             $mail->addAddress('info@inbotscr.com', 'INBOTSCR.COM');
