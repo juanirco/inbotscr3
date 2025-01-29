@@ -3,7 +3,7 @@
     <main class="hero">
         <div class="hero_content">
             <h1>
-                <span>Experts in Conversational Marketing, Chatbots, and Web Development <-> Contact us to start standing out in the digital world</span>
+                <span>Experts in Smartbots (AI powered Bots) <-> Contact us to connect better, faster and with less effort/span>
             </h1>
         </div>
     </main>
@@ -31,11 +31,11 @@
         <div class="intro_div">
             <h2 class="intro_title">How?</h2>
             <div class="intro_text">
-                <h3>Web Development and Chatbots:</h3>
+                <h3>Smartbots (AI powered bots):</h3>
                 <p>We provide your customers with the ability to find information about your business at all times, confirming your online presence 24/7 and aligning your business to provide the best possible experience.</p>
             </div>
             <div class="intro_text">
-                <h3>Conversational Marketing and Web Positioning:</h3>
+                <h3>Conversational Marketing:</h3>
                 <p>We will apply the best practices and all our knowledge - from many years of experience - to make your business more visible, more profitable, and with greater influence.</p>
             </div>
             <div class="intro_text">
@@ -55,15 +55,12 @@
                     <div class="button_div">
                         <a href="/chat_marketing" class="button_trnsp">Chat Marketing</a>
                     </div>
-                    <div class="button_div">
-                        <a href="/web_development" class="button_trnsp">Web Development</a>
-                    </div>
                 </details>
             </div>
         </div>
     
         <div class="intro_div">
-            <h2 class="intro_title">For What?</h2>
+            <h2 class="intro_title">What's for?</h2>
                 <div class="intro_text">
                     <h3>Experience:</h3><p>Research confirms that customer loyalty to a company is closely linked to the experience provided by the company to its customers, surpassing other factors such as the economic aspect or the quality of the product or service. Emotional connection and customer satisfaction are crucial for maintaining lasting affinity with the brand.</p>
                 </div>

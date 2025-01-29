@@ -20,7 +20,6 @@
                     <a href="/chatbots">Chatbots</a>
                     <a href="/bots_con_ia">Bots con IA</a>
                     <a href="/marketing_conversacional">Marketing Conversacional</a>
-                    <a href="/desarrollo_web">Desarrollo Web</a>
             </nav>
         </div>  <!-- div BigS_nav-->
         <div class="mobile_nav">
@@ -45,7 +44,6 @@
                         <a href="/chatbots">Chatbots</a>
                         <a href="/bots_con_ia">Bots con IA</a>
                         <a href="/marketing_conversacional">Marketing Conversacional</a>
-                        <a href="/desarrollo_web">Desarrollo Web</a>
                     </nav>
                     <a href="/contacto">Contacto</a>
                 </nav>

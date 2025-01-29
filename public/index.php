@@ -20,8 +20,6 @@ $router->get('/bots_con_ia', [PagesController::class, 'bots_con_ia']);
 $router->get('/ai_bots', [PagesController::class, 'ai_bots']);
 $router->get('/marketing_conversacional', [PagesController::class, 'marketing_conversacional']);
 $router->get('/chat_marketing', [PagesController::class, 'chat_marketing']);
-$router->get('/desarrollo_web', [PagesController::class, 'desarrollo_web']);
-$router->get('/web_development', [PagesController::class, 'web_development']);
 $router->get('/contacto', [PagesController::class, 'contacto']);
 $router->get('/contact', [PagesController::class, 'contact']);
 $router->post('/contacto', [PagesController::class, 'contacto']);

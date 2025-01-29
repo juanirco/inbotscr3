@@ -3,7 +3,7 @@
     <main class="hero">
         <div class="hero_content">
             <h1>
-                <span>Somos Expertos En Smartbots (Chatbots impulsados por IA) <-> Contactanos para conectar mejor, más rápido y con menos esfuerzo.</span>
+                <span>Expertos en Smartbots (Chatbots impulsados por IA) <-> Contactanos para conectar mejor, más rápido y con menos esfuerzo.</span>
             </h1>
         </div>
     </main>
@@ -31,11 +31,11 @@
         <div class="intro_div">
             <h2 class="intro_title">¿Como?</h2>
             <div class="intro_text">
-                <h3>Desarrollo web y Smartbots:</h3>
+                <h3>Smartbots (Bots impulsados con Inteligencia Artificial):</h3>
                 <p>Brindamos a tus clientes la posibilidad de encontrar información de tu negocio en todo momento, confirmando tu presencia online 24/7 y alineando tu negocio a brindar la mejor experiencia posible.</p>
             </div>
             <div class="intro_text">
-                <h3>Marketing Conversacional y Posicionamiento Web:</h3>
+                <h3>Marketing Conversacional:</h3>
                 <p>Aplicaremos las mejores practicas y todo nuestro conocimiento –de muchos años de experiencia– para hacer tu negocio mas visible, mas rentable y con mayor influencia.</p>
             </div>
             <div class="intro_text">
@@ -54,9 +54,6 @@
                     </div>
                     <div class="button_div">
                         <a href="/marketing_conversacional" class="button_trnsp">Marketing Conversacional</a>
-                    </div>
-                    <div class="button_div">
-                        <a href="/desarrollo_web" class="button_trnsp">Desarrollo Web</a>
                     </div>
                 </details>
             </div>

@@ -12,7 +12,6 @@
             <?php echo $title?>
         </h1>
         <div class="section_div">
-            <?php include_once __DIR__ . '/../templates/alerts.php';?>
             <p>If you are looking to get info about AI bots, here in Inbotscr we can assist you.</p>
             <p>This is the place where we address doubts and inquiries.</p>
         </div>

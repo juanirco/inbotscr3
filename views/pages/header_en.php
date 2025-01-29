@@ -20,7 +20,6 @@
             <a href="/chatbots_en">Chatbots</a>
             <a href="/ai_bots">AI Bots</a>
             <a href="/chat_marketing">Chat Marketing</a>
-            <a href="/web_development">Web Development</a>
         </nav>
     </div>
     <div class="mobile_nav">
@@ -45,7 +44,6 @@
                     <a href="/chatbots_en">Chatbots</a>
                     <a href="/ai_bots">AI Bots</a>
                     <a href="/chat_marketing">Chat Marketing</a>
-                    <a href="/web_development">Web Development</a>
                 </nav>
                 <a href="/contact">Contact</a>
             </nav>

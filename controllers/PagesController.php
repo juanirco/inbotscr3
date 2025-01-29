@@ -92,76 +92,21 @@ class PagesController {
             'translate_link' => '/marketing_conversacional'
         ]);
     }
-    public static function desarrollo_web(Router $router){
-        // place where view can be found and the code inside the brackets is what we pass to the view
-        $router->render('pages/desarrollo_web',[
-            'title' => 'Desarrollo Web',
-            'description' => 'Desarrollo Web en Costa Rica, USA y Latinamérica. Contáctanos para mejorar la experiencia de tus usuarios e impulsar tu negocio.',
-            'translate_link' => '/web_development'
-        ]);
-    }
-    public static function web_development(Router $router){
-        // place where view can be found and the code inside the brackets is what we pass to the view
-        $router->render('pages/web_development',[
-            'title' => 'Web Development',
-            'description' => 'Web Development in Costa Rica, USA & Latin America. Contact us to improve your customers\'s experience while boosting your business',
-            'translate_link' => '/desarrollo_web'
-        ]);
-    }
-
 
     public static function contacto(Router $router){
-        // place where view can be found and the code inside the brackets is what we pass to the view
-        if($_SERVER['REQUEST_METHOD'] === 'POST') {
-            // Verificar reCAPTCHA
-            $recaptcha_secret = '6LdbDespAAAAAH-7cD3GEb2mniXqi2p4LVZ0Ul7R';
-            $recaptcha_response = $_POST['g-recaptcha-response'];
-            $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$recaptcha_secret&response=$recaptcha_response");
-            $response_keys = json_decode($response, true);
 
-            if(intval($response_keys["success"]) !== 1) {
-                $alerts = User::setAlert('error', 'La verificación del reCAPTCHA falló. Por favor intenta nuevamente.');
-            } else {
-                $contact_email = new ContactEmail($_POST['email'], $_POST['name'], $_POST['lastname'], $_POST['message']);
-                $contact_email->receive_message();
-
-                $alerts = User::setAlert('success', 'Mensaje enviado');
-                header('refresh: 2.5; /contacto');
-            }
-        }
-        $alerts = User::getAlerts();
         $router->render('pages/contacto',[
-            'alerts' => $alerts,
             'title' => 'Contacto',
-            'description' => 'Chatbots y Desarrollo Web en Costa Rica, USA y Latinamérica. Contáctanos para mejorar la experiencia de tus usuarios e impulsar tu negocio.',
+            'description' => 'Smartbots (Bots impulsados con IA) en Costa Rica, USA y Latinamérica. Contáctanos para mejorar la experiencia de tus usuarios e impulsar tu negocio.',
             'translate_link' => '/contact'
         ]);
     }
 
     public static function contact(Router $router){
-        // place where view can be found and the code inside the brackets is what we pass to the view
-        if($_SERVER['REQUEST_METHOD'] === 'POST') {
-            // Verificar reCAPTCHA
-            $recaptcha_secret = '6LdbDespAAAAAH-7cD3GEb2mniXqi2p4LVZ0Ul7R';
-            $recaptcha_response = $_POST['g-recaptcha-response'];
-            $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$recaptcha_secret&response=$recaptcha_response");
-            $response_keys = json_decode($response, true);
 
-            if(intval($response_keys["success"]) !== 1) {
-                $alerts = User::setAlert('error', 'reCAPTCHA verification failed. Please try again.');
-            } else {
-                $contact_email = new ContactEmail($_POST['email'], $_POST['name'], $_POST['lastname'], $_POST['message']);
-                $contact_email->receive_message();
-
-                $alerts = User::setAlert('success', 'Message sent');
-                header('refresh: 2.5; /contact');
-            }
-        }
-        $alerts = User::getAlerts();
         $router->render('pages/contact',[
-            'alerts' => $alerts,
             'title' => 'Contact',
-            'description' => 'Chatbots & Web Development in Costa Rica, USA & Latin America. Contact us to improve your customers\'s experience while boosting your business',
+            'description' => 'Smartbots (AI powered Bots) in Costa Rica, USA & Latin America. Contact us to improve your customers\'s experience while boosting your business',
             'translate_link' => '/contacto'
         ]);
     }

@@ -8,7 +8,6 @@
                 <li><a href="/chatbots_en">Chatbots</a></li>
                 <li><a href="/ai_bots">AI Bots</a></li>
                 <li><a href="/chat_marketing">Chat Marketing</a></li>
-                <li><a href="/web_development">Web Development</a></li>
                 <li><a href="/contact">Contact</a></li>
             </ul>
         </div>
@@ -17,7 +16,7 @@
             <div class="info_contact">
                 <p>info@inbotscr.com</p>
                 <p>+506 8906-7373</p>
-                <p>Alajuela, Costa Rica</p>
+                <p>Costa Rica</p>
             </div>
         </div>
         <div class="footer-socialMedia">
@@ -25,7 +24,7 @@
             <ul class="links-list">
                 <li><a href="https://www.facebook.com/inbotscr">Facebook</a></li>
                 <li><a href="https://www.instagram.com/inbotscr">Instagram</a></li>
-                <li><a href="https://wa.me/+50689067373">WhatsApp</a></li>
+                <li><a href="https://www.linkedin.com/company/inbotscr">LinkedIn</a></li>
             </ul>
         </div>
     </div>
