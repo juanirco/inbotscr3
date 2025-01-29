@@ -28,7 +28,7 @@
                     </a>
                 </div>
                 <div class="contact_chnl">
-                    <a href="https://ig.me/m/inbotscr target="_blank">
+                    <a href="https://ig.me/m/inbotscr" target="_blank">
                         <img src="../build/img/instagram.png" alt="Whatsapp icon">
                         <p>Bot Instagram</p>
                     </a>
