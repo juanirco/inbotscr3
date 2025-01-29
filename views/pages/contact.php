@@ -1,3 +1,4 @@
+<?php include_once __DIR__ . '/header_en.php'?>
 <div class="contact">
     <main class="hero">
         <div class="hero_content">

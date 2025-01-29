@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="footer-socialMedia">
-            <h3>Social <br> Media</h3>
+            <h3>Social</h3>
             <ul class="links-list">
                 <li><a href="https://www.facebook.com/inbotscr">Facebook</a></li>
                 <li><a href="https://www.instagram.com/inbotscr">Instagram</a></li>
