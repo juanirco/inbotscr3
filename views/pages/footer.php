@@ -40,7 +40,6 @@
 </footer>
 
 <?php 
-    $script .= '<script src="build/js/app.js"></script>';
-    $script .= '<script src="https://app.inbotscr.com/webchat/plugin.js?v=6"></script>';
-    $script .= '<script>ktt10.setup({id:"XVtrY3u6IN6sP",accountId:"1222873",color:"#006dff"})</script>';
+    $script = '<script src="build/js/app.js"></script>';
+
 ?>
