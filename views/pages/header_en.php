@@ -8,7 +8,7 @@
                 <nav class="nav">
                     <a href="/en">Home</a>
                     <a href="/us">About Us</a>
-                    <p class="services_BS_a">Services</p>
+                    <a href="/ai_bots">Smartbots</a>
                     <a href="/contact">Contact</a>
                 </nav>
                 <a href="<?php echo $translate_link;?>">
@@ -16,11 +16,6 @@
                 </a>
             </div>
         </div>
-        <nav class="services_nav">
-            <a href="/chatbots_en">Chatbots</a>
-            <a href="/ai_bots">AI Bots</a>
-            <a href="/chat_marketing">Chat Marketing</a>
-        </nav>
     </div>
     <div class="mobile_nav">
         <div class="up">
@@ -39,12 +34,7 @@
             <nav class="nav">
                 <a href="/en">Home</a>
                 <a href="/us">About Us</a>
-                <p class="services_Mob_a">Services</p>
-                <nav class="services_nav">
-                    <a href="/chatbots_en">Chatbots</a>
-                    <a href="/ai_bots">AI Bots</a>
-                    <a href="/chat_marketing">Chat Marketing</a>
-                </nav>
+                <a href="/ai_bots">Smartbots</a>
                 <a href="/contact">Contact</a>
             </nav>
             <div class="down">

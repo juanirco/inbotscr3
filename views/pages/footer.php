@@ -5,9 +5,7 @@
             <ul class="links-list">
                 <li><a href="/">Inicio</a></li>
                 <li><a href="/nosotros">Nosotros</a></li>
-                <li><a href="/chatbots">Chatbots</a></li>
-                <li><a href="/bots_con_ia">Bots con IA</a></li>
-                <li><a href="/marketing_conversacional">Marketing Conversacional</a></li>
+                <li><a href="/bots_con_ia">Smartbots</a></li>
                 <li><a href="contacto">Contacto</a></li>
             </ul>
         </div>
@@ -40,7 +38,7 @@
 </footer>
 
 <?php 
-    $script .= '<script src="build/js/app.js"></script>';
+    $script = '<script src="build/js/app.js"></script>';
     $script .= '<script src="https://app.inbotscr.com/webchat/plugin.js?v=6"></script>';
     $script .= '<script>ktt10.setup({id:"XVtrY3u6IN6sP",accountId:"1222873",color:"#006dff"})</script>';
     // Google tag (gtag.js)

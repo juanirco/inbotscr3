@@ -15,53 +15,69 @@
         </h1>
     
         <div class="section_div">
-            <div class="split">
-                <h3 class="section_title">Todo lo de un chatbot pero con mayor potencial y con capacidades casi ilimitadas.</h3>
+            <div class="split mbig">
+                <h3 class="section_title">💡 ALGUNOS PROBLEMAS QUE
+                RESUELVEN LOS SMARTBOTS </h3>
                 <div class="section_text">
-                    <details>
-                        <summary>Atención al cliente eficiente las 24/7:</summary>
-                        <p>Los bots pueden proporcionar atención al cliente constante reduciendo la necesidad de contratar equipos para turnos rotativos.</p>
-                    </details>
-    
-                    <details>
-                        <summary>Respuestas precisas, personalizadas y variadas:</summary>
-                        <p>Los bots pueden manejar múltiples consultas simultáneas, personalizadas y con variabilidad en cada respuesta, mejorando la satisfacción del cliente con el tiempo.</p>
-                    </details>
-    
-                    <details>
-                        <summary>Ahorro de tiempo y recursos:</summary>
-                        <p>Al responder automáticamente preguntas frecuentes, los bots liberan tiempo para que el equipo se centre en cuestiones más complejas y estratégicas.</p>
-                    </details>
-    
-                    <details>
-                        <summary>Análisis predictivo y recomendaciones personalizadas: </summary>
-                        <p>Los bots pueden utilizar algoritmos de inteligencia artificial para analizar el comportamiento del usuario, sus preferencias y patrones de compra, así como datos históricos y tendencias del mercado, para ofrecer recomendaciones personalizadas y predecir las necesidades futuras del usuario</p>
-                    </details>
-
-                    <details>
-                        <summary>Reconocimiento por comando de voz:</summary>
-                        <p>Estos bots con inteligencia artificial son capaces de reconocer la voz de los usuarios, y a su vez pueden ser programados para responder de igual manera, tanto audios como llamadas</p>
-                    </details>
-
-                    <details>
-                        <summary>Reconocimiento visual:</summary>
-                        <p>Los bots con inteligencia artificial son capaces de reconocer imagenes enviadas por los usuarios, analizarlas, describirlas e incluso responder según el contexto de la imagen</p>
-                    </details>
-
-                    <details>
-                        <summary>Traducción en tiempo real:</summary>
-                        <p>Una increíble ventaja con los bots con inteligencia artificial es que se puede reducir los límites culturales al comunicarse con personas que hablan otros idiomas, ya que estos pueden ser utilizados para traducir las consultas de los usuarios en tiempo real y a su vez responderles a ellos en su idioma original, ya sea por textos, audios o llamadas</p>
-                    </details>
-                    <details>
-                        <summary>Analisis de documentos:</summary>
-                        <p>Esta es una función bastante útil para muchos negocios ya que a veces se requiere que una persona analice documentos que envían los clientes o usuarios. Con un bot con inteligencia artificial ya es posible hacer esa función en segundos</p>
-                    </details>
-                    <details>
-                        <summary>Y mucho más</summary>
-                        <p>Con las inteligencias artificiales cada vez más evolucionadas las posibilidades son casi infinitas, por ende las necesidades de los negocios son cada vez más accesibles a tener solución</p>
-                    </details>
+                    <ul>
+                        <li>✅ Atención automática y personalizada las 24 horas de
+                        manera natural y a la vez avanzada gracias a la IA.</li>
+                        <li>✅ Respuestas rápidas, precisas y muy adaptadas al
+                        contexto e información de la empresa y el cliente</li>
+                        <li>✅ Manejo inmediato de múltiples consultas simultáneas en
+                        diversos canales (Web, WhatsApp, Redes Sociales, etc.).</li>
+                        <li>✅ Permiten al personal enfocarse en tareas estratégicas
+                        como cerrar ventas, marketing y atención personalizada.</li>
+                        <li>✅ Interacción difícil de identificar de la humana.</li>
+                        <li>✅ Autenticación segura para consultas sensibles y privadas</li>
+                        <li>✅ Identificación de problemas frecuentes y oportunidades
+                        de mejora internas.</li>
+                        <li>✅ Pueden analizar el comportamiento del usuario para ofrecer recomendaciones personalizadas.</li>
+                        <li>✅ Son capaces de reconocer la voz de los usuarios, y a su vez pueden ser programados para responder de igual manera.</li>
+                        <li>✅ Reconocimiento visual y análisis de documentos</li>
+                        <li>✅ Traducción en tiempo real</li>
+                        <li>✅ Automatización de tareas según la interacción (agenda de citas, enviar correos, llenado de formularios y muchas más).</li>
+                        <li>✅ Y mucho más</li>
+                    </ul>
                 </div>
             </div>
+
+            <div class="full mbig">
+                <h3 class="section_title">📈 RESULTADOS COMPROBADOS
+                TRAS IMPLEMENTAR SMARTBOTS</h3>
+                <div class="section_text">
+                    <ul>
+                        <li>💡 Según HubSpot, las empresas han logrado una reducción del 30% en tiempos de respuesta incrementando un 40% la eficiencia operativa y mejorando en un 35% la satisfacción general del cliente.</li>
+                        <li>💡 Dukaan reemplazó al 90% de su personal con un chatbot de IA, reduciendo el tiempo promedio de resolución de problemas de más de 2 horas a solo 3 minutos.</li>
+                        <li>💡 Azalea 211 incrementó en un 40% la tasa de conversión para un medio B2B mediante automatización impulsada por IA.</li>
+                        <li>💡 Una start-up del sector HVAC aumentó un 500% sus leads gracias al uso de IA en automatización y gestión de datos.</li>
+                        <li>💡 Empresas que utilizan smartbots han reducido costos de atención al cliente en un 30%, aumentando las conversiones hasta un 25%.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section_div">
+            <div class="full">
+                <h3 class="section_title">🥇 QUE DESTACA A
+                NUESTROS SMARTBOTS </h3>
+                <div class="section_text">
+                    <ul>
+                        <li>⚙️ Entrenamiento personalizado basado en información real de la empresa</li>
+                        <li>⚙️ Plataforma integral que centraliza canales de comunicación y conversaciones. (Web, WhatsApp,  Redes Sociales y otras plataformas).</li>
+                        <li>⚙️ CRM propio integrado con el smartbot y las interacciones de los usuarios.</li>
+                        <li>⚙️ Creación y análisis de contenido por inteligencia artificial.</li>
+                        <li>⚙️ Posibilidad de integrarse fácilmente con miles de API’s y Servicios externos.</li>
+                        <li>⚙️ Operación 24/7 con optimización y mejoras constantes.</li>
+                        <li>⚙️ Autenticaciones de seguridad para consultas privadas.</li>
+                        <li>⚙️ Posibilidad de automatizar respuestas inteligentes (IA) en los comentarios de Instagram y Facebook</li>
+                        <li>⚙️ Creación de equipos de atención y soporte con la posibilidad de asignar y auto-asignar (bot) casos.</li>
+                        <li>⚙️ Herramientas clave para marketing y ventas.</li>
+                        <li>⚙️ Analítica avanzada con reportes gráficos detallados sobre interacciones.</li>
+                        <li>⚙️ Creación de notificaciones personalizadas para los administradores (según la necesidad).</li>
+                    </ul>
+                </div>
+            </div>
+
             <p>Creemos firmemente que la adopción de esta tecnología innovadora será fundamental para mantener la competitividad y el éxito de tu negocio en el mercado actual.</p>
         </div>
     </section>

@@ -14,53 +14,63 @@
     </h1>
 
     <div class="section_div">
-        <div class="split">
-            <h3 class="section_title">Everything a chatbot does but with greater potential and nearly limitless capabilities.</h3>
-            <div class="section_text">
-                <details>
-                    <summary>Efficient 24/7 customer service:</summary>
-                    <p>Bots can provide constant customer service, reducing the need for hiring teams for rotating shifts.</p>
-                </details>
-
-                <details>
-                    <summary>Precise, personalized, and varied responses:</summary>
-                    <p>Bots can handle multiple simultaneous queries, personalized and varied in each response, improving customer satisfaction over time.</p>
-                </details>
-
-                <details>
-                    <summary>Time and resource savings:</summary>
-                    <p>By automatically answering frequently asked questions, bots free up time for the team to focus on more complex and strategic issues.</p>
-                </details>
-
-                <details>
-                    <summary>Predictive analysis and personalized recommendations:</summary>
-                    <p>Bots can use artificial intelligence algorithms to analyze user behavior, preferences, purchasing patterns, as well as historical data and market trends, to offer personalized recommendations and predict users' future needs.</p>
-                </details>
-
-                <details>
-                    <summary>Voice command recognition:</summary>
-                    <p>These AI-powered bots are capable of recognizing users' voices and can be programmed to respond in kind, both to audio and calls.</p>
-                </details>
-
-                <details>
-                    <summary>Visual recognition:</summary>
-                    <p>AI-powered bots can recognize images sent by users, analyze them, describe them, and even respond based on the context of the image.</p>
-                </details>
-
-                <details>
-                    <summary>Real-time translation:</summary>
-                    <p>An incredible advantage with AI-powered bots is that they can reduce cultural barriers when communicating with people who speak other languages, as they can be used to translate users' queries in real-time and respond to them in their original language, whether through text, audio, or calls.</p>
-                </details>
-                <details>
-                    <summary>Document analysis:</summary>
-                    <p>This is a very useful function for many businesses as sometimes it's required for a person to analyze documents sent by clients or users. With an AI-powered bot, it's now possible to perform that function in seconds.</p>
-                </details>
-                <details>
-                    <summary>And much more</summary>
-                    <p>With increasingly advanced artificial intelligence, the possibilities are nearly endless, making business needs increasingly accessible to solutions.</p>
-                </details>
+            <div class="split mbig">
+                <h3 class="section_title">💡 SOME PROBLEMS THAT
+                SMARTBOTS SOLVE</h3>
+                <div class="section_text">
+                    <ul>
+                        <li>✅ Automatic and personalized 24/7 assistance in a natural yet advanced way thanks to AI.</li>
+                        <li>✅ Quick, precise, and highly context-adapted responses tailored to the company's and customer's information.</li>
+                        <li>✅ Immediate handling of multiple simultaneous inquiries across various channels (Web, WhatsApp, Social Media, etc.).</li>
+                        <li>✅ Allows staff to focus on strategic tasks like closing sales, marketing, and personalized attention.</li>
+                        <li>✅ Interaction that is hard to distinguish from human.</li>
+                        <li>✅ Secure authentication for sensitive and private inquiries.</li>
+                        <li>✅ Identification of frequent issues and internal improvement opportunities.</li>
+                        <li>✅ Can analyze user behavior to offer personalized recommendations.</li>
+                        <li>✅ Capable of recognizing users' voices and can be programmed to respond in kind.</li>
+                        <li>✅ Visual recognition and document analysis.</li>
+                        <li>✅ Real-time translation.</li>
+                        <li>✅ Task automation based on interaction (appointment scheduling, sending emails, form filling, and much more).</li>
+                        <li>✅ And much more.</li>
+                    </ul>
+                </div>
             </div>
-        </div>
+
+            <div class="full mbig">
+                <h3 class="section_title">📈 PROVEN RESULTS
+                AFTER IMPLEMENTING SMARTBOTS</h3>
+                <div class="section_text">
+                    <ul>
+                        <li>💡 According to HubSpot, companies have achieved a 30% reduction in response times, increasing operational efficiency by 40% and improving overall customer satisfaction by 35%.</li>
+                        <li>💡 Dukaan replaced 90% of its staff with an AI chatbot, reducing the average problem resolution time from over 2 hours to just 3 minutes.</li>
+                        <li>💡 Azalea 211 increased its conversion rate by 40% for a B2B medium through AI-driven automation.</li>
+                        <li>💡 A start-up in the HVAC sector increased its leads by 500% thanks to AI in automation and data management.</li>
+                        <li>💡 Companies using smartbots have reduced customer service costs by 30%, increasing conversions by up to 25%.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section_div">
+            <div class="full">
+                <h3 class="section_title">🥇 WHAT MAKES OUR
+                SMARTBOTS STAND OUT</h3>
+                <div class="section_text">
+                    <ul>
+                        <li>⚙️ Personalized training based on real company information.</li>
+                        <li>⚙️ Comprehensive platform that centralizes communication channels and conversations (Web, WhatsApp, Social Media, and other platforms).</li>
+                        <li>⚙️ Proprietary CRM integrated with the smartbot and user interactions.</li>
+                        <li>⚙️ Content creation and analysis powered by artificial intelligence.</li>
+                        <li>⚙️ Easy integration with thousands of APIs and external services.</li>
+                        <li>⚙️ 24/7 operation with constant optimization and improvements.</li>
+                        <li>⚙️ Security authentications for private inquiries.</li>
+                        <li>⚙️ Ability to automate intelligent (AI) responses to Instagram and Facebook comments.</li>
+                        <li>⚙️ Creation of support and service teams with the ability to assign and auto-assign (bot) cases.</li>
+                        <li>⚙️ Key tools for marketing and sales.</li>
+                        <li>⚙️ Advanced analytics with detailed graphical reports on interactions.</li>
+                        <li>⚙️ Creation of personalized notifications for administrators (as needed).</li>
+                    </ul>
+                </div>
+            </div>
         <p>We firmly believe that adopting this innovative technology will be crucial to maintaining competitiveness and success for your business in the current market.</p>
     </div>
 </section>

@@ -16,60 +16,40 @@
     
         <div class="intro_div">
             <h2 class="intro_title">Why Us?</h2>
-                <div class="intro_text">
-                    <p>
-                        We are an agency with a clear purpose: to impact, drive, and stand out. We see our clients as strategic partners and therefore commit ourselves completely to the brand and image of their respective businesses; prioritizing tailor-made solutions, allowing them to <strong>impact</strong> their customers and <strong>drive</strong> business growth, thus achieving to <strong>stand out</strong> in a diverse digital world where differentiating oneself and always offering a great experience is essential and fundamental.
-                    </p>
-    
-                    <p>We invite you to learn more about us in the following button.</p>
-                </div>
-                <div class="button_div">
-                    <a href="/about-us" class="button_trnsp">About Us</a>
-                </div>
+            <div class="intro_text">
+                <p>
+                    We are an agency with a clear purpose: to impact, drive, and stand out. We see our clients as strategic partners and therefore commit ourselves completely to the brand and image of their respective businesses; prioritizing tailor-made solutions, allowing them to <strong>impact</strong> their customers and <strong>drive</strong> business growth, thus achieving to <strong>stand out</strong> in a diverse digital world where differentiating oneself and always offering a great experience is essential and fundamental.
+                </p>
+            </div>
         </div>
     
         <div class="intro_div">
             <h2 class="intro_title">How?</h2>
             <div class="intro_text">
-                <h3>Smartbots (AI powered bots):</h3>
-                <p>We provide your customers with the ability to find information about your business at all times, confirming your online presence 24/7 and aligning your business to provide the best possible experience.</p>
-            </div>
-            <div class="intro_text">
-                <h3>Conversational Marketing:</h3>
-                <p>We will apply the best practices and all our knowledge - from many years of experience - to make your business more visible, more profitable, and with greater influence.</p>
-            </div>
-            <div class="intro_text">
-                <h3>Integrations: </h3>
-                <p>We specialize in providing solutions that allow our clients to have greater control over their data and resources, therefore, we implement integrations that guarantee a better experience when operating their businesses.</p>
+                <h3>Smartbots:</h3>
+                <p>We provide your contacts with the ability to access information about your business at any time, aligning your business to deliver the best possible experience. <br>
+                We achieve this through AI-powered bots, specially trained with real and specific information from each company. This enables seamless, natural communication that is virtually indistinguishable from human interaction. These bots can understand and respond to queries both in writing and via voice with high accuracy, significantly improving customer service and optimizing internal processes.
+                </p>
             </div>
 
             <div class="details_services">
-                <details>
-                    <summary>Services: </summary>
-                    <div class="button_div">
-                        <a href="/chatbots_en" class="button_trnsp">Chatbots</a>
-                    </div>
-                    <div class="button_div">
-                        <a href="/ai_bots" class="button_trnsp">AI Bots</a>
-                    </div>
-                    <div class="button_div">
-                        <a href="/chat_marketing" class="button_trnsp">Chat Marketing</a>
-                    </div>
-                </details>
+                <div class="button_div">
+                    <a href="/ai_bots" class="button_trnsp">AI Bots</a>
+                </div>
             </div>
         </div>
     
         <div class="intro_div">
             <h2 class="intro_title">What's for?</h2>
-                <div class="intro_text">
-                    <h3>Experience:</h3><p>Research confirms that customer loyalty to a company is closely linked to the experience provided by the company to its customers, surpassing other factors such as the economic aspect or the quality of the product or service. Emotional connection and customer satisfaction are crucial for maintaining lasting affinity with the brand.</p>
-                </div>
-    
-                <div class="intro_text">
-                    <h3>Growth:</h3> <p class="p_end">We love to drive the growth and profitability of our clients. We believe in the importance of generating tangible results. By offering personalized solutions centered on the customer, we aspire to exceed expectations, thus promoting long-term success for our clients and their businesses.</p>
-                </div>
+            <div class="intro_text">
+                <h3>Experience:</h3><p>Research confirms that customer loyalty to a company is closely linked to the experience provided by the company to its customers, surpassing other factors such as the economic aspect or the quality of the product or service. Emotional connection and customer satisfaction are crucial for maintaining lasting affinity with the brand.</p>
             </div>
-        </section>
-        <?php include_once __DIR__ . '/cta_en.php';?>
+
+            <div class="intro_text">
+                <h3>Growth:</h3> <p class="p_end">We love to drive the growth and profitability of our clients. We believe in the importance of generating tangible results. By offering personalized solutions centered on the customer, we aspire to exceed expectations, thus promoting long-term success for our clients and their businesses.</p>
+            </div>
+        </div>
+    </section>
+    <?php include_once __DIR__ . '/cta_en.php';?>
 </div>
 <?php include_once __DIR__ . '/footer_en.php';?>
